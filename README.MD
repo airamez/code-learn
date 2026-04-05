@@ -13,6 +13,7 @@
 * URL: https://codelearn.live/
 * Git repository: https://github.com/airamez/code-learn
 * Discord: https://discord.gg/T3XhuaAe
+* My LinkedIn: https://www.linkedin.com/in/jose-rodrigues-santos/
 
 ## Overview
   
