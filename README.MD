@@ -3,12 +3,10 @@
 ## About course
 
 * Live videos on YouTube on Mondays, Wednesdays and Fridays at 8PM PST
-* Free forever
 * I already have a similar course
   * https://codando.live
-  * Audio is in Portuguese
-  * All the texting is in English
-  * There are 380+ videos in the previous course  
+  * Audio in Portuguese but the texting in English
+  * There are 380+ videos
 * Youtube channel: https://www.youtube.com/@airamez
 * URL: https://codelearn.live/
 * Git repository: https://github.com/airamez/code-learn
@@ -23,6 +21,7 @@
 * We will use AI tools all the time
 * The content will be created on the fly during the live videos
   * I am expecting some frustation but it is part of the learning process
+* The idea is to an provide an experience similar to an University degree in Computer Programming or Software Engineering
 
 ## Software Engineer after AI
   * AI changed Software Engineering 'drastically'
@@ -45,22 +44,19 @@
     * It is all a ilusion
     * Without abstraction we can't build complex systems
   * How a computer stores information
-    * Example of teenagers dating code
-      * With just one light
-        * On = At home
-        * Off = Not at home
-      * With two lights
-        * On, On = At home and alone
-        * On, Off = At home but with parents awaken
-        * Off, On = At home but parents asleep
-        * Off, Off = Not at home
+    * Example:
+      * Teenagers dating code
+        * Using lights at windows to indicate status
+          * One light
+          * Two lights
+          * Three or more lights?
     * Binary system
       * Base 2 number system
       * Only uses 0 and 1
-      * Example: 1010
+      * Example: 1011 in binary is 11 in decimal
       * How to convert to and from decimal to binary?
     * Data, Information, bit and byte
-  * Program / Application types
+  * Types of Programs / Applications
     * Console
     * Windows
     * Web
