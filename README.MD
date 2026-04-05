@@ -9,6 +9,7 @@
   * Audio is in Portuguese
   * All the texting is in English
   * There are 380+ videos in the previous course  
+* Youtube channel: https://www.youtube.com/@airamez
 * URL: https://codelearn.live/
 * Git repository: https://github.com/airamez/code-learn
 * Discord: https://discord.gg/T3XhuaAe
