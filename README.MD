@@ -8,6 +8,7 @@
   * Audio in Portuguese but the texting in English
   * There are 380+ videos
 * Youtube channel: https://www.youtube.com/@airamez
+* Youtube playlist: https://www.youtube.com/playlist?list=PLBQmBWUPdMJR4cB3fwdhtJ6nNcfOaoplx
 * URL: https://codelearn.live/
 * Git repository: https://github.com/airamez/code-learn
 * Discord: https://discord.gg/T3XhuaAe
@@ -37,97 +38,7 @@
   * Important to know the fundamentals otherwise it will be hard to build production ready and robust solutions
   * For demo and prototype AI is `unbeatable`
 
-## Intro to computing
-  * Abstraction
-    * What is abstraction?
-    * Why is abstraction important?
-    * It is all a ilusion
-    * Without abstraction we can't build complex systems
-  * How a computer stores information
-    * Example:
-      * Teenagers dating code
-        * Using lights at windows to indicate status
-          * One light
-          * Two lights
-          * Three or more lights?
-    * Binary system
-      * Base 2 number system
-      * Only uses 0 and 1
-      * Example: 1011 in binary is 11 in decimal
-      * How to convert to and from decimal to binary?
-    * Data, Information, bit and byte
-  * Types of Programs / Applications
-    * Console
-    * Windows
-    * Web
-    * Mobile
-    * Webservices and APIs
-  * Source code vs Machine code
-    * Source code is human readable code
-    * Machine code is the actual instructions that the computer executes
-      * Specific to the processor architecture (x86, ARM, etc.)
-    * A source code is transformed into machine code through a process called compilation / interpretation
-      * Compilation
-        * Source code is converted to machine code before execution
-      * Interpretation
-        * Source code is converted to machine code during execution
-      * Java introduced the idea of mixing compilation and interpretation
-        * First compiles to bytecode
-        * Then interprets the bytecode
-        * Other technologies like .NET also use this approach
-    * Examples: [-001-Code-examples.md](./-001-code-examples.md)
-
-## Accessing the Course Content
-
-* Git/GitHub
-  * Intro
-  * Repository: https://github.com/airamez/code-learn
-* Clone with git
-  * [Install git](https://github.com/git-guides/install-git)
-  * `git clone https://github.com/airamez/code-learn.git`
-* Updating the content
-  * `git pull`
-* We will learn more about git in the future
-
-## IDE - Integrated Development Environment / Code Editor
-
-* Online
-    * https://app.coderpad.io/sandbox
-    * https://vscode.dev/
-* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
-    * Community (Free)
-* [Visual Studio Code](https://code.visualstudio.com/) (Free)
-* [IntelliJ](https://www.jetbrains.com/idea/)
-* etc.
-* How to setup a project with VSCODE
-    1. Install [Visual Studio Code](https://code.visualstudio.com/)
-    2. Install the **C# Dev Kit** extension: open VS Code → `Ctrl+Shift+X` → search for `C# Dev Kit` → click **Install**
-    3. Install the [.NET SDK](https://dotnet.microsoft.com/download) (version 10 or later)
-    4. Open a terminal in VS Code (`Ctrl + `` ` ``)
-    5. Run `dotnet new console -n YourProjectName -o YourProjectName` to create a new console project
-    6. Run `cd YourProjectName` to navigate into the project folder
-    7. Open the project: `code .`
-    8. Open `Program.cs` and start coding
-    9. Run the app with `dotnet run` in the terminal
-
-## Course Content
-
-* Variables
-* Operators
-* Commands
-* Array
-* Functions
-* Object Oriented Programming
-* Exceptions
-* API
-* Math
-* Random
-* Date
-* Data Structures Intro
-* Collections
-* Leetcode
-* Docker
-* SQL
-* GIT
-* Software Architecture
-* HTTP/HTTPS
+|Class|Youtube Video|Content|
+|-----|-------------|-------|
+|1|[Intro](https://youtube.com/live/In_I1ZiLnJU)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|2|[Intro to Computing]|[_002_IntroToComputing.md](./_002_IntroToComputing.md)|
