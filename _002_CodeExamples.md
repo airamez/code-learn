@@ -39,7 +39,7 @@ IL_0041: ret                                           // Return from the method
 ```
 ; Console.WriteLine("Hello World")
 48 8D 0D 1A 20 00 00    lea rcx, [rip+0x201a]      ; Load string address
-E8 C5 FF FF FF           call <Console.WriteLine>  ; Call WriteLine function
+E8 C5 FF FF FF          call <Console.WriteLine>   ; Call WriteLine function
 
 ; decimal price = 10.50m
 48 8B 4C 24 20           mov rcx, [rsp+0x20]       ; Load decimal constant
@@ -66,7 +66,7 @@ E8 90 FF FF FF           call <Decimal.Add>        ; Add decimals
 48 89 4C 24 70           mov [rsp+0x70], rcx       ; Store total
 
 ; Console.WriteLine($"Total: {total}")
-48 8D 0D 05 20 00 00    lea rcx, [rip+0x2005]      ; Load format string
+48 8D 0D 05 20 00 00     lea rcx, [rip+0x2005]     ; Load format string
 48 8B 54 24 70           mov rdx, [rsp+0x70]       ; Load total
 E8 80 FF FF FF           call <Console.WriteLine>  ; Call WriteLine with formatting
 
@@ -83,3 +83,30 @@ C3                       ret                       ; Return from function
 6. **E8 A0 FF FF FF** - `CALL`: Calls the Decimal.Divide method  
 7. **E8 90 FF FF FF** - `CALL`: Calls the Decimal.Add method
 8. **C3** - `RET`: Returns from the function
+
+---
+
+## What the Machine Actually Sees (Pure Binary):
+
+The hex bytes above are just a human-friendly representation. The CPU only ever reads **0s and 1s**:
+
+```
+; Console.WriteLine("Hello World")
+; hex:   48       8D       0D       1A       20       00       00
+; bin: 01001000 10001101 00001101 00011010 00100000 00000000 00000000  ← lea rcx, [rip+0x201a]
+; hex:   E8       C5       FF       FF       FF
+; bin: 11101000 11000101 11111111 11111111 11111111                    ← call <Console.WriteLine>
+
+; decimal price = 10.50m
+; hex:   48       8B       4C       24       20
+; bin: 01001000 10001011 01001100 00100100 00100000                    ← mov rcx, [rsp+0x20]
+; hex:   48       89       4C       24       30
+; bin: 01001000 10001001 01001100 00100100 00110000                    ← mov [rsp+0x30], rcx
+
+; Return
+; hex:   C3
+; bin: 11000011                                                        ← ret
+```
+
+> Every program, no matter how complex, is ultimately executed by the CPU as a sequence of 0s and 1s.
+> Each group of 8 bits (e.g. `01001000`) is one **byte**. The CPU decodes these bit patterns into electrical signals.

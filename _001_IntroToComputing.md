@@ -3,7 +3,8 @@
     * What is abstraction?
     * Why is abstraction important?
     * It is all a ilusion
-    * Without abstraction we can't build complex systems
+    * Without abstraction we can't understand, build, operate, and maintain complex systems
+    * Almost everything has layers and layers of abstractions
   * How a computer stores information
     * Example:
       * Teenagers dating code
@@ -11,6 +12,7 @@
           * One light
           * Two lights
           * Three or more lights?
+      * [Teenagers dating code example](excalidraw/_01_TeenagersCodes.png)
     * Binary system
       * Base 2 number system
       * Only uses 0 and 1
