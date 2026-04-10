@@ -38,6 +38,11 @@
   * Important to know the fundamentals otherwise it will be hard to build production ready and robust solutions
   * For demo and prototype AI is `unbeatable`
 
+## Content
+
+
+## Classes
+
 |Class|Youtube Video|Content|
 |-----|-------------|-------|
 |1|[Intro](https://youtube.com/live/In_I1ZiLnJU)|[README.MD](./README.MD)|
