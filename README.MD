@@ -46,4 +46,4 @@
 |Class|Youtube Video|Content|
 |-----|-------------|-------|
 |1|[Intro](https://youtube.com/live/In_I1ZiLnJU)|[README.MD](./README.MD)|
-|2|[Intro to Computing](https://youtube.com/live/cEmISUBdGv8)|[_002_IntroToComputing.md](./_002_IntroToComputing.md)|
+|2|[Intro to Computing](https://youtube.com/live/cEmISUBdGv8)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
