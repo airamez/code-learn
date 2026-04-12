@@ -1,16 +1,23 @@
-# Accessing the Course Content
+# Course Content
+
+## Accessing the Course Content
 
 * Git/GitHub
-  * Intro
-  * Repository: https://github.com/airamez/code-learn
-* Clone with git
-  * [Install git](https://github.com/git-guides/install-git)
-  * `git clone https://github.com/airamez/code-learn.git`
+  * Git: A distributed version control system that tracks changes in files and coordinates work among multiple developers.
+  * GitHub: A web-based platform for version control and collaboration that hosts Git repositories.
+* Install git: https://github.com/git-guides/install-git
+* Repository: https://github.com/airamez/code-learn
+* Clone the repository:
+    ```bash
+    git clone https://github.com/airamez/code-learn.git
+    ```
 * Updating the content
-  * `git pull`
+    ```bash
+    git pull
+    ```
 * We will learn more about git in the future
 
-# IDE - Integrated Development Environment / Code Editor
+### IDE - Integrated Development Environment / Code Editor
 
 * Online
     * https://app.coderpad.io/sandbox
@@ -30,3 +37,44 @@
     7. Open the project: `code .`
     8. Open `Program.cs` and start coding
     9. Run the app with `dotnet run` in the terminal
+
+## Course Content
+
+### Programming Fundamentals in
+  * Variables
+  * Data Types and Conversions
+  * Basic Operations and Expressions
+  * Commands
+    * Conditional Statements
+    * Loops
+  * Intro do API
+    * Math
+    * Random
+    * Char
+    * String
+  * Array
+  * Functions
+  * Object Oriented Programming
+  * Exceptions
+  * .Net API
+  * Date
+  * Data Structures Intro
+  * Collections
+
+### Unit Testing
+
+### Big O Notation
+
+### GIT
+
+### Leetcode
+
+### Docker
+
+### SQL
+
+### Backend
+
+### Frontend
+
+### Software Architecture
