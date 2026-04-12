@@ -90,28 +90,19 @@
     * Uses 1 to 4 bytes per character
     * Backward-compatible with ASCII (first 128 characters are identical)
     * The most widely used encoding on the web
-    * Example:
-      * "love" in different:
-        * Chinese: 爱 (U+7231)
-          * 爱 = U+7231
-        * Japanese: 愛 (U+611B)
-          * 愛 = U+611B
-        * Hindi: प्यार (U+092A U+094D U+092F U+093E U+0930)
-          * प = U+092A
-          * ् = U+094D
-          * य = U+092F
-          * ा = U+093E
-          * र = U+0930
-        * Korean: 사랑 (U+B098 U+C0BC)
-          * 사랑 = U+B098 U+C0BC
-        * Greek: αγάπη (U+03B1 U+03B3 U+03AC U+03C0 U+03B7)
-          * αγάπη = U+03B1 U+03B3 U+03AC U+03C0 U+03B7
-        * Hebrew: אהבה (U+05D0 U+05D4 U+05D1 U+05D4)
-          * אהבה = U+05D0 U+05D4 U+05D1 U+05D4
-        * Arabic: حب (U+062D U+0628)
-          * حب = U+062D U+0628
-        * Portuguese: amor (U+616D U+6D6F)
-          * amor = U+616D U+6D6F
+    * Example: "love" in different languages:
+
+      | Language | Text | Unicode Code Points |
+      |----------|------|---------------------|
+      | Chinese | 爱 | U+7231 |
+      | Japanese | 愛 | U+611B |
+      | Hindi | प्यार | U+092A U+094D U+092F U+093E U+0930 |
+      | Korean | 사랑 | U+B098 U+C0BC |
+      | Greek | αγάπη | U+03B1 U+03B3 U+03AC U+03C0 U+03B7 |
+      | Hebrew | אהבה | U+05D0 U+05D4 U+05D1 U+05D4 |
+      | Arabic | حب | U+062D U+0628 |
+      | Portuguese | amor | U+0061 U+006D U+006F U+0072 |
+
   * Abstraction of pressing a key and seeing it in the screen
     * The physical key press is detected by the keyboard controller
     * The controller translates the key press into a scancode
