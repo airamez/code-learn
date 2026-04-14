@@ -48,3 +48,5 @@
 |1|[Intro](https://youtube.com/live/In_I1ZiLnJU)|[README.MD](./README.MD)|
 |2|[Intro to Computing: How a computer stores information](https://youtube.com/live/cEmISUBdGv8)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
 |3|[Intro to Computing: Numeric Systems: Decimal, Binary, Octal and Hexadecimal](https://www.youtube.com/live/CF_Kppt9xfw)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|4|[Intro to Computing: How Computers Store Different Types of Information](https://www.youtube.com/live/CWyXAMZXTDk)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+
