@@ -122,7 +122,6 @@
   * Abstraction of a image to screen
     ![Image to Screen](./images/ImageToScreen.png)
 
-
 * Audio / Music
   * Sound is a continuous wave — it must be sampled (measured at regular intervals)
   * Sample rate: how many times per second the sound wave is measured (e.g., 44,100 Hz = CD quality)
@@ -132,13 +131,34 @@
   * Combined with audio synchronized to the frames
   * Uncompressed video requires enormous storage — compression is essential
 
-## Types Applications
+## Application Types
 
-* Console
-* Desktop / Window
-* Mobile
-* Web
-* Webservices and APIs
+* **Console**
+  * Text-based interface, runs in a terminal/command prompt
+  * No graphical UI; input/output via keyboard and text
+  * Examples: CLI tools, scripts, batch processors
+
+
+* **Desktop / Windows**
+  * Installed and runs locally on a computer
+  * Rich graphical user interface (GUI)
+  * Examples: Microsoft Word, Photoshop, Visual Studio
+
+* **Mobile**
+  * Runs on smartphones and tablets (iOS, Android)
+  * Designed for touch input and small screens
+  * Examples: WhatsApp, Instagram, mobile banking apps
+
+* **Web**
+  * Runs in a browser, accessed via URL
+  * No installation required; works cross-platform
+  * Examples: Gmail, Google Docs, e-commerce sites
+
+* **Web Services and APIs**
+  * Backend services that expose functionality over HTTP
+  * No user interface; communicates via data formats (JSON, XML)
+  * Examples: REST APIs, SOAP services, payment gateways
+
 * ![Application Types](./images/ApplicationTypes.png)
 
 ## Type of programs: Source code vs Machine code
@@ -155,7 +175,6 @@
     * First compiles to bytecode
     * Then interprets the bytecode
     * Other technologies like .NET also use this approach
-* Examples:
 
 ### Source Code:
 ```csharp
@@ -241,3 +260,12 @@ The hex bytes above are just a human-friendly representation. The CPU only ever 
 
 > Every program, no matter how complex, is ultimately executed by the CPU as a sequence of 0s and 1s.
 > Each group of 8 bits (e.g. `01001000`) is one **byte**. The CPU decodes these bit patterns into electrical signals.
+
+### More on Machine Code
+
+* [Machine Code](https://en.wikipedia.org/wiki/Machine_code)
+* [How does Computer Hardware Work?](https://www.youtube.com/watch?v=d86ws7mQYIg)
+* [The Fetch-Execute Cycle: What's Your Computer Actually Doing?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI)
+* [How computer execute instructions || with simple animation](https://www.youtube.com/watch?v=PgOKUZstCuc)
+
+![Machine Code Execution](./images/MachineCodeExecutedByCPU.png)
