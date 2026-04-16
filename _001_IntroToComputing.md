@@ -159,7 +159,7 @@
   * No user interface; communicates via data formats (JSON, XML)
   * Examples: REST APIs, SOAP services, payment gateways
 
-* ![Application Types](./images/ApplicationTypes.png)
+![Application Types](./images/ApplicationTypes.png)
 
 ## Type of programs: Source code vs Machine code
 
