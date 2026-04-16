@@ -53,13 +53,49 @@
 
 ## Content
 
-### Programming Fundamentals in
+### Programming Fundamentals (C#)
   * Hello World
   * Comments
   * Variables
-  * Data Types and Conversions
+    * Declaration
+    * Initialization
+  * Basic Types
+    * https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
+    * byte
+      * Unsigned whole numbers (0 to 255) without decimal points, e.g., file sizes, image data, network protocols.
+      * Range: `0` to `255`.
+    * short
+      * Smaller whole numbers (positive or negative) without decimal points, e.g., small counts, file sizes, timestamps.
+      * Range: `-32,768` to `32,767`.
+    * int
+      * Whole numbers (positive or negative) without decimal points, e.g., counts, indices, quantities.
+      * Range: `-2,147,483,648` to `2,147,483,647`.
+    * uint
+      * Unsigned whole numbers (0 to 4,294,967,295) without decimal points, e.g., large counts, file sizes, network protocols.
+      * Range: `0` to `4,294,967,295`.
+    * long
+      * Larger whole numbers (positive or negative) without decimal points, e.g., large counts, file sizes, timestamps.
+      * Range: `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`.
+    * float
+      * Single-precision floating-point numbers for approximate decimal values where memory is limited and precision is less critical, e.g., graphics, games.
+      * Range: `±1.5 x 10⁻⁴⁵` to `±3.4 x 10³⁸`
+      * Precision: ~6-9 digits
+    * double
+      * Double-precision floating-point numbers for scientific calculations requiring wider range but still approximate values, e.g., physics simulations.
+      * Range: `±5.0 x 10⁻³²⁴` to `±1.7 x 10³⁰⁸`
+      * Precision: ~15-17 digits
+    * decimal
+      * High-precision decimal values for financial/monetary calculations where exact precision is critical to avoid rounding errors.
+      * Range: `±1.0 x 10⁻²⁸` to `±7.9 x 10²⁸`
+      * Precision: 28-29 significant digits
+    * string
+      * Sequence of characters for text data, e.g., names, messages, file paths, user input.
+    * char
+      * Single Unicode character, e.g., menu options, flags, individual symbols, single letter grades.
+    * bool
+      * Logical true/false values, e.g., flags, conditions, states (on/off, yes/no, valid/invalid).
+  * Conversions
   * Basic Operations
-    * Assignment
     * Input/Output
     * Arithmetic
     * Comparison
@@ -72,6 +108,7 @@
     * Random
     * Char
     * String
+    * Date
   * Array
   * Functions
   * Object Oriented Programming
