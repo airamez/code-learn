@@ -52,4 +52,6 @@
 |5|[Types of Aplication and Programs](https://youtube.com/live/LwMy6W5ktR0)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
 |6|[Course Content and IDE](https://youtube.com/live/mN_CMpF6TF4)|[_002_CourseContent.md](./_002_CourseContent.md)|
 |7|[Hello World, Comments and Variables](https://youtube.com/live/TAUpzcBMSZM)|[_001_HelloWorld.cs](./_01_Intro/_001_HelloWorld.cs) <br> [_002_HelloWorldWithComments.cs](./_01_Intro/_002_HelloWorldWithComments.cs) <br> [_003_Variables.cs](./_01_Intro/_003_Variables.cs)|
+|8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
+
 

@@ -61,7 +61,7 @@
     * Declaration
     * Initialization
   * Basic Types
-  * Conversions
+  * Type Conversions
   * Basic Operations
     * Input/Output
     * Arithmetic
