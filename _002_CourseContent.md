@@ -61,6 +61,7 @@
     * Declaration
     * Initialization
   * Basic Types
+  * String Interpolation
   * Type Conversions
   * Basic Operations
     * Input/Output
