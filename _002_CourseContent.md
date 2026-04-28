@@ -68,6 +68,7 @@
     * Arithmetic
     * Comparison
     * Logical
+  * Declaring Variables with `var`
   * Commands
     * Conditional Statements
     * Loops

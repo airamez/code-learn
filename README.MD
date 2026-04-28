@@ -51,6 +51,7 @@
 |4|[Intro to Computing: How Computers Store Different Types of Information](https://www.youtube.com/live/CWyXAMZXTDk)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
 |5|[Types of Aplication and Programs](https://youtube.com/live/LwMy6W5ktR0)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
 |6|[Course Content and IDE](https://youtube.com/live/mN_CMpF6TF4)|[_002_CourseContent.md](./_002_CourseContent.md)|
-|7|[Hello World, Comments and Variables](https://youtube.com/live/TAUpzcBMSZM)|[_001_HelloWorld.cs](./_01_Intro/_001_HelloWorld.cs) <br> [_002_HelloWorldWithComments.cs](./_01_Intro/_002_HelloWorldWithComments.cs) <br> [_003_Variables.cs](./_01_Intro/_003_Variables.cs)|
-|8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
+|7|[Hello World, Comments and Variables](https://youtube.com/live/TAUpzcBMSZM)|[_01_Intro/_001_HelloWorld.cs](./_01_Intro/_001_HelloWorld.cs) <br> [_01_Intro/_002_HelloWorldWithComments.cs](./_01_Intro/_002_HelloWorldWithComments.cs) <br> [_01_Intro/_003_Variables.cs](./_01_Intro/_003_Variables.cs)|
+|8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[_01_Intro/_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
 |9|[String Interpolation, Type Conversion and Input/Ouput](https://youtube.com/live/Mrtv4PgX4-o)|[_01_Intro/_005_StringInterpolation.cs](./_01_Intro/_005_StringInterpolation.cs) <br> [_01_Intro/_006_TypeConversion.cs](./_01_Intro/_006_TypeConversion.cs) <br> [_01_Intro/_007_InputOutput.cs](./_01_Intro/_007_InputOutput.cs)|
+|10|[Arithmetic Operations](https://youtube.com/live/klXPMS11Gxs)|[_01_Intro/_010_ArithmeticOperations.cs](./_01_Intro/_010_ArithmeticOperations.cs)|

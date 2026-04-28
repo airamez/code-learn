@@ -5,4 +5,5 @@
 //DataTypes.Run();
 //StringInterpolation.Run();
 //TypeConversion.Run();
-InputOutput.Run();
+//InputOutput.Run();
+ArithmeticOperations.Run();
