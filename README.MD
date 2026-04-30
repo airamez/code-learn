@@ -55,3 +55,5 @@
 |8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[_01_Intro/_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
 |9|[String Interpolation, Type Conversion and Input/Ouput](https://youtube.com/live/Mrtv4PgX4-o)|[_01_Intro/_005_StringInterpolation.cs](./_01_Intro/_005_StringInterpolation.cs) <br> [_01_Intro/_006_TypeConversion.cs](./_01_Intro/_006_TypeConversion.cs) <br> [_01_Intro/_007_InputOutput.cs](./_01_Intro/_007_InputOutput.cs)|
 |10|[Arithmetic Operations](https://youtube.com/live/klXPMS11Gxs)|[_01_Intro/_010_ArithmeticOperations.cs](./_01_Intro/_010_ArithmeticOperations.cs)|
+|11|[Comparison and Logical Operations](https://youtube.com/live/yyOELTSKlNE)|[_01_Intro/_011_ComparisonOperations.cs](./_01_Intro/_011_ComparisonOperations.cs) <br> [_01_Intro/_012_LogicOperations.cs](./_01_Intro/_012_LogicOperations.cs)|
+

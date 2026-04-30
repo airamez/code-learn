@@ -6,4 +6,6 @@
 //StringInterpolation.Run();
 //TypeConversion.Run();
 //InputOutput.Run();
-ArithmeticOperations.Run();
+//ArithmeticOperations.Run();
+//ComparisonOperations.Run();
+LogicOperations.Run();
