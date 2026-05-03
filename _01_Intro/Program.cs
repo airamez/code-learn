@@ -8,4 +8,5 @@
 //InputOutput.Run();
 //ArithmeticOperations.Run();
 //ComparisonOperations.Run();
-LogicOperations.Run();
+//LogicOperations.Run();
+BasicOperationsPractices.Question2.Run();

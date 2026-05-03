@@ -46,14 +46,14 @@
 |Class|Youtube Video|Content|
 |-----|-------------|-------|
 |1|[Intro](https://youtube.com/live/In_I1ZiLnJU)|[README.MD](./README.MD)|
-|2|[Intro to Computing: How a computer stores information](https://youtube.com/live/cEmISUBdGv8)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
-|3|[Intro to Computing: Numeric Systems: Decimal, Binary, Octal and Hexadecimal](https://www.youtube.com/live/CF_Kppt9xfw)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
-|4|[Intro to Computing: How Computers Store Different Types of Information](https://www.youtube.com/live/CWyXAMZXTDk)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
-|5|[Types of Aplication and Programs](https://youtube.com/live/LwMy6W5ktR0)|[_001_IntroToComputing.md](./_001_IntroToComputing.md)|
-|6|[Course Content and IDE](https://youtube.com/live/mN_CMpF6TF4)|[_002_CourseContent.md](./_002_CourseContent.md)|
-|7|[Hello World, Comments and Variables](https://youtube.com/live/TAUpzcBMSZM)|[_01_Intro/_001_HelloWorld.cs](./_01_Intro/_001_HelloWorld.cs) <br> [_01_Intro/_002_HelloWorldWithComments.cs](./_01_Intro/_002_HelloWorldWithComments.cs) <br> [_01_Intro/_003_Variables.cs](./_01_Intro/_003_Variables.cs)|
-|8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[_01_Intro/_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
-|9|[String Interpolation, Type Conversion and Input/Ouput](https://youtube.com/live/Mrtv4PgX4-o)|[_01_Intro/_005_StringInterpolation.cs](./_01_Intro/_005_StringInterpolation.cs) <br> [_01_Intro/_006_TypeConversion.cs](./_01_Intro/_006_TypeConversion.cs) <br> [_01_Intro/_007_InputOutput.cs](./_01_Intro/_007_InputOutput.cs)|
-|10|[Arithmetic Operations](https://youtube.com/live/klXPMS11Gxs)|[_01_Intro/_010_ArithmeticOperations.cs](./_01_Intro/_010_ArithmeticOperations.cs)|
-|11|[Comparison and Logical Operations](https://youtube.com/live/yyOELTSKlNE)|[_01_Intro/_011_ComparisonOperations.cs](./_01_Intro/_011_ComparisonOperations.cs) <br> [_01_Intro/_012_LogicOperations.cs](./_01_Intro/_012_LogicOperations.cs)|
-
+|2|[Intro to Computing: How a computer stores information](https://youtube.com/live/cEmISUBdGv8)|[/_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|3|[Intro to Computing: Numeric Systems: Decimal, Binary, Octal and Hexadecimal](https://www.youtube.com/live/CF_Kppt9xfw)|[/_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|4|[Intro to Computing: How Computers Store Different Types of Information](https://www.youtube.com/live/CWyXAMZXTDk)|[/_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|5|[Types of Aplication and Programs](https://youtube.com/live/LwMy6W5ktR0)|[/_001_IntroToComputing.md](./_001_IntroToComputing.md)|
+|6|[Course Content and IDE](https://youtube.com/live/mN_CMpF6TF4)|[/_002_CourseContent.md](./_002_CourseContent.md)|
+|7|[Hello World, Comments and Variables](https://youtube.com/live/TAUpzcBMSZM)|[/_01_Intro/_001_HelloWorld.cs](./_01_Intro/_001_HelloWorld.cs) <br> [/_01_Intro/_002_HelloWorldWithComments.cs](./_01_Intro/_002_HelloWorldWithComments.cs) <br> [/_01_Intro/_003_Variables.cs](./_01_Intro/_003_Variables.cs)|
+|8|[Basic Data Types](https://youtube.com/live/RqxK7lPVY8o)|[/_01_Intro/_004_DataTypes.cs](./_01_Intro/_004_DataTypes.cs)|
+|9|[String Interpolation, Type Conversion and Input/Ouput](https://youtube.com/live/Mrtv4PgX4-o)|[/_01_Intro/_005_StringInterpolation.cs](./_01_Intro/_005_StringInterpolation.cs) <br> [/_01_Intro/_006_TypeConversion.cs](./_01_Intro/_006_TypeConversion.cs) <br> [/_01_Intro/_007_InputOutput.cs](./_01_Intro/_007_InputOutput.cs)|
+|10|[Arithmetic Operations](https://youtube.com/live/klXPMS11Gxs)|[/_01_Intro/_010_ArithmeticOperations.cs](./_01_Intro/_010_ArithmeticOperations.cs)|
+|11|[Comparison and Logical Operations](https://youtube.com/live/yyOELTSKlNE)|[/_01_Intro/_011_ComparisonOperations.cs](./_01_Intro/_011_ComparisonOperations.cs) <br> [/_01_Intro/_012_LogicOperations.cs](./_01_Intro/_012_LogicOperations.cs)|
+|12|[Basic Operations Practices (Questions 1 and 2)](https://youtube.com/live/-nOSSq2x2_w)|[/_01_Intro/_01_Practices/_01_BasicOperations/Question01.cs](./_01_Intro/_01_Practices/_01_BasicOperations/Question01.cs) <br> [/_01_Intro/_01_Practices/_01_BasicOperations/Question02.cs](./_01_Intro/_01_Practices/_01_BasicOperations/Question02.cs)|

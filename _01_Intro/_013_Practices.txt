@@ -6,7 +6,7 @@ Create programs to:
 05. Read the base and length of a rectangle and calculate its area.
 06. Read an integer and print True if the number is Even and False if it is Odd.
 07. Read two integer numbers A and B and print True if A is divisible to B and False otherwise
-09. Read a temperature in Celsius and convert to Fahrenheit: F = C x 1.8 + 32.
+08. Read a temperature in Celsius and convert to Fahrenheit: F = C x 1.8 + 32.
 09. Read the buying price (cost), the desired profit percentage and
     calculate the sales price of a product.
 10. Read the buying price (cost), the desired profit percentage and the sales tax % and

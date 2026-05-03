@@ -73,6 +73,7 @@
   * Commands
     * Conditional Statements
     * Loops
+  * Algorithm
   * Intro do API
     * Math
     * Random
