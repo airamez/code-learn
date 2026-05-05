@@ -9,4 +9,7 @@
 //ArithmeticOperations.Run();
 //ComparisonOperations.Run();
 //LogicOperations.Run();
-BasicOperationsPractices.Question2.Run();
+//BasicOperationsPractices.Question2.Run();
+//BasicOperationsPractices.Question3.Run();
+//BasicOperationsPractices.Question4.Run();
+BasicOperationsPractices.Question5.Run();
