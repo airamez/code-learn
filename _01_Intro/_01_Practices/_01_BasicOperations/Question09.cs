@@ -8,7 +8,7 @@ public class Question09
     {
         /*
          * 09. Read the buying price (cost), the desired profit percentage and
-         * calculate the sales price of a product.
+         *     calculate the sales price of a product.
         */
 
         Console.Write("Buying price (cost): ");
