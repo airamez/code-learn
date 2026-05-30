@@ -1,114 +1,334 @@
-# How Companies Are Using AI in Software Engineering (2026)​
+# How Companies Are Using AI in Software Engineering (2026)
 
-## Key Terms​
+## Key Terms
 
-### LLM — Large Language Model​
+### LLM — Large Language Model
 
-A Large Language Model is a type of AI trained on massive amounts of text to understand and generate human-like language.​
+A Large Language Model is a type of AI trained on massive amounts of text to understand and generate human-like language.
 
-### RAG — Retrieval-Augmented Generation​
+### RAG — Retrieval-Augmented Generation
 
-RAG combines a language model with an external knowledge source (like docs, codebases, or manuals). The model retrieves relevant facts and then generates answers using that context.​
+RAG combines a language model with an external knowledge source (like docs, codebases, or manuals). The model retrieves relevant facts and then generates answers using that context.
 
-### MCP — Model Context Protocol​
+### MCP — Model Context Protocol
 
-MCP is a framework for how AI agents can interact with external tools and structured data​
-​
-## What is AI?​
+MCP is a framework for how AI agents can interact with external tools and structured data
+
+## What is AI?
 
 AI (Artificial Intelligence) is the field of building systems that can perform
 tasks typically requiring human intelligence, such as understanding
 language, recognizing patterns, making decisions, and solving problems. In
 software engineering, AI helps automate routine work, surface insights, and
-speed up development across planning, coding, testing, and operations.​
+speed up development across planning, coding, testing, and operations.
 
-## Why AI matters for software teams​
+## Why AI matters for software teams
 
 - Accelerates development by generating code snippets, tests, and
-documentation​
-- Improves quality with automated defect detection and security checks​
-- Helps teams make decisions faster using data-driven insights​
+documentation
+- Improves quality with automated defect detection and security checks
+- Helps teams make decisions faster using data-driven insights
 - Enables personalization and smarter applications through predictive
-models​
+models
 - Like any other tool, framework, paradigm, etc., there is no guarantee of
-success and no magic.​
+success and no magic.
 
-## ​Widespread Adoption Across the Industry​
+## Widespread Adoption Across the Industry
 
-- AI tools have moved from experimental to mainstream: 95% of engineers use AI tools at least weekly, with 75% using them for half or more of their work (and 56% for 70%+)​
-  - (https://newsletter.pragmaticengineer.com/p/ai-tooling-2026)​
-- 84-92% of developers use or plan to use AI coding assistants daily or weekly.​
-  - https://firstlinesoftware.com/blog/ai-software-development-2026-2035/​
-- AI now generates a significant portion of new code: Google reports ~75% of new code is AI-generated (up from 25% in late 2024); overall industry estimates show 40-50%+ of code is AI-assisted.​
-  - https://dev.to/kanywst/what-11-big-tech-companies-actually-do-with-ai-in-2026-a-layered-numbers-first-breakdown-h58​
+- AI tools have moved from experimental to mainstream: 95% of engineers use AI tools at least weekly, with 75% using them for half or more of their work (and 56% for 70%+)
+  - (https://newsletter.pragmaticengineer.com/p/ai-tooling-2026)
+- 84-92% of developers use or plan to use AI coding assistants daily or weekly.
+  - https://firstlinesoftware.com/blog/ai-software-development-2026-2035/
+- AI now generates a significant portion of new code: Google reports ~75% of new code is AI-generated (up from 25% in late 2024); overall industry estimates show 40-50%+ of code is AI-assisted.
+  - https://dev.to/kanywst/what-11-big-tech-companies-actually-do-with-ai-in-2026-a-layered-numbers-first-breakdown-h58
 
-​
-## ​Core Use Cases in the Software Development Lifecycle​
 
-- Code Generation & Completion​
-  - Inline suggestions, boilerplate, full functions, and features (GitHub Copilot, Cursor, Claude Code, Amazon Q, etc.).​
-- Automated Testing​
-  - AI generates unit/integration tests, identifies edge cases, and creates test cases in parallel with development.​
-- Code Review, Refactoring & Quality​ 
-  - AI-powered reviews, bug detection, refactoring suggestions, and security vulnerability scanning.​
-- Documentation & Requirements​
-  - Auto-generating docs, summarizing code, translating requirements into specs.​
-- Debugging & Maintenance​
-  - Root cause analysis, legacy code modernization, and predictive issue detection.​
-- DevOps & Operations​
-  - CI/CD optimization, infrastructure provisioning, incident management, and deployment automation via AI agents.​
+## Core Use Cases in the Software Development Lifecycle
+
+- Code Generation & Completion
+  - Inline suggestions, boilerplate, full functions, and features (GitHub Copilot, Cursor, Claude Code, Amazon Q, etc.).
+- Automated Testing
+  - AI generates unit/integration tests, identifies edge cases, and creates test cases in parallel with development.
+- Code Review, Refactoring & Quality 
+  - AI-powered reviews, bug detection, refactoring suggestions, and security vulnerability scanning.
+- Prototyping & Experimentation
+  - AI accelerates early validation by generating proof-of-concept code, UI mocks, and integration experiments, but there is often a large gap and risk when moving these prototypes into production-grade systems.
+- Documentation & Requirements
+  - Auto-generating docs, summarizing code, translating requirements into specs.
+- Debugging & Maintenance
+  - Root cause analysis, legacy code modernization, and predictive issue detection.
+- DevOps & Operations
+  - CI/CD optimization, infrastructure provisioning, incident management, and deployment automation via AI agents.
 - Source
-  - https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-ai-revolution-in-software-development​
+  - https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-ai-revolution-in-software-development
 
-## Shift in Developer Roles: From Coder to Orchestrator​
+## Shift in Developer Roles: From Coder to Orchestrator
 
-- Developers spend less time on routine coding and more on architecture, validation, system design, and overseeing AI agents.​
-- Rise of AI Agents: 55%+ of engineers use agents that can handle multi-step tasks (planning → coding → testing → PR submission).​
-- Human focus moves to higher-value work: intent definition, quality gates, and complex problem-solving.​
+- Developers spend less time on routine coding and more on architecture, validation, system design, and overseeing AI agents.
+- Rise of AI Agents: 55%+ of engineers use agents that can handle multi-step tasks (planning → coding → testing → PR submission).
+- Human focus moves to higher-value work: intent definition, quality gates, and complex problem-solving.
+- Several high-skilled engineers now report they rarely type production code manually; instead they prompt AI to generate implementations and then review those outputs very carefully before merging.
+  - References
+    - https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/
+    - https://finance.yahoo.com/news/spotify-ceo-says-top-developers-103101995.html
+    - https://medium.com/@yalovoy/the-senior-engineers-job-in-2026-is-code-review-not-code-writing-f804036c55ab
+    - https://www.techinterview.org/post/3233475092/reviewing-ai-generated-code-skills/
+- Many experts now describe senior engineers as “reviewers of AI output” rather than pure code authors, with workflows that spend more time validating generated logic than writing syntax.
 
-## Productivity & Business Impact​
+## Productivity & Business Impact
 
-- Reported gains​
-  - 30-55% faster task completion, 30%+ reduction in time-to-market, up to 64% increase in per-engineer output (e.g., Mercari).​
-  - Stripe (1,300+ PRs/week merged by agents)​
-  - Spotify (30% increase in code changes/developer)​
-  - Meta (50% of code changes from DevMate) show scaled impact.​
-- Challenges​
-  - Increased rework/bug rates in some cases​
-  - Need for strong human oversight​
-  - Potential code quality issues if not managed well.​
+- Reported gains
+  - 30-55% faster task completion, 30%+ reduction in time-to-market, up to 64% increase in per-engineer output (e.g., Mercari).
+  - Stripe (1,300+ PRs/week merged by agents)
+  - Spotify (30% increase in code changes/developer)
+  - Meta (50% of code changes from DevMate) show scaled impact.
+- Challenges
+  - Increased rework/bug rates in some cases
+  - Need for strong human oversight
+  - Potential code quality issues if not managed well.
+### References
 
-​## Popular Tools & Ecosystem (2026)​
+- Mercari: "Becoming AI‑Native at Mercari: Group Strategy and a US Case Study" (Medium) and "What 11 big tech companies actually do with AI in 2026" (Dev.to)
+  - https://medium.com/mercari-engineering/becoming-ai-native-at-mercari-group-strategy-and-a-us-case-study-fda4a3ee5877
+  - https://dev.to/kanywst/what-11-big-tech-companies-actually-do-with-ai-in-2026-a-layered-numbers-first-breakdown-h58
+- Stripe: "How Stripe's Minions Ship 1300 PRs a Week" (ByteByteGo)
+  - https://blog.bytebytego.com/p/how-stripes-minions-ship-1300-prs
+- Spotify: TechCrunch coverage and Medium analysis of AI coding agents
+  - https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/
+  - https://medium.com/codetodeploy/how-spotify-built-an-ai-coding-agent-that-merged-1-500-prs-6e913b9b4ca5
+- Meta / DevMate: LinearB analysis and Medium architecture breakdown
+  - https://linearb.io/blog/meta-ai-control-plane-james-everingham-guildai
+  - https://medium.com/@wasowski.jarek/meta-devmate-agent-marketplace-architecture-multi-model-ai-coding-platform-c796815d3431
+## Popular Tools & Ecosystem (2026)
 
-- Cursor​
-- GitHub Copilot​
-- Claude​
-- Windsurf​
-- Gemini​
-- Amazon Q.​
-- Enterprise adoption in 90%+ of Fortune 100 companies.​
+The AI developer ecosystem in 2026 is led by a mix of large platform providers and specialist code assistants. Most-used tools combine IDE pair programming, conversational LLM copilots, knowledge retrieval, and codebase-aware agents. The top products are now embedded into developer workflows, and the largest vendors maintain the strongest enterprise adoption.
 
-## Strategic Recommendations for Companies​
+| Tool | Owner | Primary Use | Approx. 2026 Market Share |
+|---|---|---|---|
+| GitHub Copilot | Microsoft / GitHub | IDE pair programming, code completion, doc-to-code | ~28% |
+| ChatGPT (GPT-4.5/5) | OpenAI | general dev assistance, code generation, testing help | ~18% |
+| Claude | Anthropic | enterprise code reasoning, safety-focused chat assistance | ~12% |
+| Gemini | Google DeepMind | code search, multimodal dev workflows, RAG | ~10% |
+| Amazon Q / CodeWhisperer | Amazon Web Services | cloud-native coding, DevOps, knowledge retrieval | ~9% |
+| Cursor | Cursor | code generation, workflow automation, knowledge-to-code | ~6% |
+| Sourcegraph Cody | Sourcegraph | code intelligence, repository search, RAG | ~5% |
+| Tabnine | Perplexity | multi-language completion, local model support | ~4% |
+| Replit Ghostwriter | Replit | browser-based coding, learning, and prototyping | ~3% |
+| Windsurf | Windsurf AI | autonomous agent orchestration, developer productivity | ~3% |
 
-- Embed AI across the full lifecycle (not just coding).​
-- Implement guardrails, review processes, and training for effective human-AI collaboration.​
-- Measure success beyond speed: focus on quality, maintainability, and usiness outcomes.​
-- Prepare for AI-native development models and evolving team structures.​
-- AI agents becoming standard and developers "conductors."​
-- Warning: In some cases using AI can be a desaster
-  - High regulated business
-  - SolutionLiability
-  - @todo: Add cases where companies reported issue by adoptiing AI without proper supervision
+- Most-used AI tools in 2026 are those tightly integrated into IDEs and enterprise platforms.
+- GitHub Copilot remains the leader for daily coding tasks, while OpenAI and Anthropic dominate chat-driven developer assistance.
+- Google Gemini and Amazon Q are strongest in organizations that already use Google Cloud or AWS extensively.
+- Specialized tools like Cursor, Sourcegraph Cody, Tabnine, and Replit Ghostwriter are important for codebase search, knowledge retrieval, and niche workflow automation.
+- The largest five platforms account for roughly 70-75% of the overall developer AI tool market, with the rest split among niche assistants and enterprise-specific deployments.
 
-​
+Enterprise adoption in 90%+ of Fortune 100 companies continues, especially for tools that add compliance, security, and source-aware code reasoning.
 
-​
-​
+## Strategic Recommendations for Companies
 
-​
+- Embed AI across the full lifecycle (not just coding).
+- Implement guardrails, review processes, and training for effective human-AI collaboration.
+- Measure success beyond speed: focus on quality, maintainability, and usiness outcomes.
+- Prepare for AI-native development models and evolving team structures.
+- AI agents becoming standard and developers "conductors."
 
-​
+### Warning: In some cases using AI can be a disaster
 
-​
+- Major production incidents have shown that AI-assisted code must never be treated as self-certified. After a series of outages, Amazon reportedly blocked deployment of AI-generated changes without human review and required senior approval for AI-assisted commits from junior and mid-level engineers.
+- High-regulation industries such as finance, accounting, healthcare, and aerospace are particularly vulnerable. In these domains, AI-generated code can create compliance gaps, unsafe behavior, or legal liability if it reaches production without strong human oversight.
+- Legacy and complex distributed systems are also high risk, because AI tools often lack full visibility into system-wide dependencies, data contracts, and operational constraints.
+- Other common failure modes include insecure code patterns, leaked proprietary data in prompts or responses, and brittle logic that passes unit tests but fails in real-world production conditions.
+- Best practice: use AI as an assistant, not an autonomous deployer. Maintain clear review gates, provenance tracking, deterministic checks, and a strong human-in-the-loop approval process before releasing AI-assisted code.
 
-​
+#### Cautionary References
+
+- Amazon review gate example: https://x.com/godofprompt/status/2031419734537711825
+- Industry post-mortem commentary: https://timonweb.com/ai/amazons-ai-code-broke-production-dont-let-yours-be-next/
+
+## Understanding how LLM works
+
+Large Language Models are built in two major stages: pretraining a statistical model on a huge corpus of text, then using that model to generate or score new text. A model is not a conventional program with explicit rules; it is a set of learned numerical weights that define how language patterns are represented and combined.
+
+- Tokens
+  - Text is first broken into smaller pieces called tokens. A token can be a whole word, part of a word, punctuation, or even a single character, depending on the tokenizer.
+  - The model does not see raw characters or words directly; it sees token IDs. Each token is mapped to an integer ID from a fixed vocabulary.
+
+  Example:
+
+  ```text
+  The sky is blue
+  ```
+
+  might become:
+
+  ```text
+  ["The", " sky", " is", " blue"]
+  [1024, 17, 4056, 213]
+  ```
+
+  - The ID sequence is the encoded input the model actually processes.
+
+  Simple training example:
+
+  Suppose we want a model to answer questions about colors using a tiny dataset.
+
+  Training data:
+  - Input: "Question: What color is the sky? Answer:"
+  - Target output: " blue"
+
+  Step-by-step:
+  1. Tokenize the input and target.
+     - Input tokens: ["Question:", " What", " color", " is", " the", " sky", "?", " Answer:"]
+     - Target tokens: [" blue"]
+  2. Convert tokens to token IDs.
+     - Example IDs: [3001, 27, 431, 9, 12, 215, 5, 210, 77]
+  3. Look up token embeddings for each ID.
+     - IDs become vectors: [e3001, e27, e431, ...]
+  4. Process embeddings through transformer layers.
+     - Each layer uses learned parameters (weights and biases) to compute attention and transform the vectors.
+     - Attention lets the model compare the word "sky" with the prompt context so it knows what the question asks.
+  5. The model predicts the next token probability distribution.
+     - Output logits might assign high probability to " blue" and low probability to unrelated tokens.
+  6. During training, the model compares its prediction to the true target " blue" and updates parameters to make that prediction more likely.
+
+  In other words, the model learns from examples like this:
+
+  ```text
+  Input:  Question: What color is the sky? Answer:
+  Target:  blue
+  ```
+
+  After training on enough examples, the model can generalize to new, similar questions:
+
+  ```text
+  Input:  Question: What color is grass? Answer:
+  Output: green
+  ```
+
+  Graphical flow for one prompt:
+
+  ```text
+  User prompt:
+    "Question: What color is grass? Answer:"
+               |
+            Tokenizer
+               |
+          Token IDs
+      [3001, 27, 431, 9, 12, 508, 5, 210]
+               |
+       Embedding lookup
+    [e3001, e27, e431, ..., e210]
+               |
+       Transformer layers
+   (attention + feed-forward)
+               |
+     Context-aware vectors
+    [c1, c2, c3, ..., c8]
+               |
+       Output logits
+    [p(" green"), p(" blue"), p(" red"), ...]
+               |
+      Generated answer
+        " green"
+  ```
+
+  - `Token IDs` are not the meaning of the words. They are the vocabulary indexes assigned by the tokenizer.
+    For example, the tokenizer might assign:
+    - 3001 → "Question:"
+    - 27 → " What"
+    - 431 → " color"
+    - 210 → " Answer:"
+    The numbers are simply how the model refers to each token internally.
+  - `Embedding lookup` uses those IDs to select a learned vector from an embedding table.
+    The embedding table is a matrix of shape `[vocab_size, embedding_dim]`.
+    So ID 3001 indexes row 3001 and returns `e3001`, a vector like `[0.12, -0.34, 0.05, ...]`.
+  - The model cannot multiply or compare raw text, so it first converts each token ID into a numeric embedding vector. This is why the step is called lookup: the ID points to the vector, and the vector is the actual input to the transformer layers.
+  - The embedding table is a matrix of shape `[vocab_size × embedding_dim]`. Each row in the matrix is a dense vector for one token.
+  - In other words, token IDs are the address of the word in the model's vocabulary, while embeddings are the actual numeric inputs the model uses to reason about meaning and context.
+
+  This example teaches a key point: the model is created by adjusting parameters so that the chain from prompt tokens to output probabilities makes correct predictions. The same learned parameters are reused at inference time to answer new questions.
+
+  >Warning: Is the sky always blue?
+
+  Longer text is tokenized sequentially. For example:
+
+  ```text
+  An integer is a whole number that can be positive, negative, or zero.
+  Integers do not include fractions or decimals.
+  ```
+
+  This might become a stream of tokens such as:
+
+  ```text
+  ["An", " integer", " is", " a", " whole", " number", " that", " can", " be", " positive", ",", " negative", ",", " or", " zero", ".", "\n", "Integers", " do", " not", " include", " fractions", " or", " decimals", "."]
+  ```
+
+  - A tokenizer converts this into IDs and preserves the order so the model can reason about the text as a sequence.
+
+- Parameters
+  - Parameters are the model's learned numbers, stored in weight matrices and bias vectors.
+  - Modern LLMs use billions or trillions of parameters. Each parameter is a floating-point value that contributes to how the model transforms token embeddings.
+  - During training, the model adjusts these parameters to minimize prediction error. After training, the parameters are fixed and used to compute the next-token probabilities.
+  - For example, one layer in a transformer might compute:
+
+  ```text
+  output = softmax(W2 * gelu(W1 * embedding + b1) + b2)
+  ```
+
+  where `W1`, `W2`, `b1`, and `b2` are all parameters.
+
+  - More parameters generally mean more expressive power, but also higher compute and memory costs.
+
+## Matrix multiplication in AI models
+
+Matrix multiplication is one of the most important operations in modern AI models.
+>TODO: https://www.youtube.com/watch?v=CDjZfmrPef4
+
+- Embedding lookup is effectively a form of matrix multiplication.
+  - A token ID selects one row from the embedding matrix. That row is a dense vector, and the whole embedding table is a matrix of shape `[vocab_size × embedding_dim]`.
+  - In a hardware implementation, this lookup can be done by multiplying a one-hot token vector by the embedding matrix.
+
+- Most transformer computations are matrix multiplications.
+  - A transformer layer computes queries, keys, and values using weight matrices: `Q = X·W_Q`, `K = X·W_K`, `V = X·W_V`.
+  - Attention scores are computed with another matrix multiply: `scores = Q·K^T`.
+  - The attended output is then `softmax(scores)·V`, which is also matrix multiplication.
+  - The feed-forward network inside the transformer is typically `FFN(X) = gelu(X·W_1 + b_1)·W_2 + b_2`.
+
+- Why matrix multiplication matters
+  - Matrix multiplication is a dense, regular operation that hardware like GPUs and TPUs can execute very efficiently.
+  - Because transformer models process many tokens and many dimensions, most of the runtime and energy cost comes from these large matrix multiplies.
+  - This is why AI accelerators are designed around fast matrix math and why software frameworks like PyTorch and TensorFlow expose it as a first-class primitive.
+
+- In practice
+  - The model does not compute one token at a time in isolation. It processes whole batches of token embeddings and applies these matrix operations across the full sequence.
+  - This is what gives transformers their power: they can mix information from many tokens with a few large matrix multiplies rather than many small, irregular operations.
+
+- Training and fine-tuning
+  - During pretraining, the model learns to predict missing or next tokens from a large volume of text. That training objective is what gives it a statistical sense of grammar, facts, and common word sequences.
+  - Fine-tuning or instruction tuning is usually applied afterward to specialize the base model for tasks like question answering, coding help, or following developer prompts.
+
+- From source text to answers
+  - When you ask a question, the input text is tokenized and converted into a sequence of token IDs. These IDs are mapped into vectors by an embedding layer.
+  - The model processes these vectors through many layers of computation, often transformer layers with attention mechanisms. Attention lets the model weigh different input tokens relative to one another, so it can decide which parts of the prompt are most relevant.
+  - The final output is a sequence of token probabilities. The model selects likely next tokens one by one, producing text that answers the question or continues the prompt.
+
+Example:
+- Source text: "Explain how to use a loop in Python."
+- Tokenized as: ["Explain", " how", " to", " use", " a", " loop", " in", " Python", "."]
+- The model converts tokens into vectors, applies learned weights and attention, and generates a response like "In Python, use a for loop with range() to iterate over values...".
+
+This is why LLMs are useful for software engineering: they can map patterns in natural language to patterns in code, documentation, and design concepts, but they do so through statistical association rather than formal symbolic reasoning.
+
+>TODO: Add a diagram about the The embedding table is a matrix of shape and add a reference to that nice video explaning it.
+
+
+
+
+
+
+
+
+
+
+
+
