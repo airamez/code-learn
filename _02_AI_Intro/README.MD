@@ -149,6 +149,102 @@ Enterprise adoption in 90%+ of Fortune 100 companies continues, especially for t
 
 Large Language Models are built in two major stages: pretraining a statistical model on a huge corpus of text, then using that model to generate or score new text. A model is not a conventional program with explicit rules; it is a set of learned numerical weights that define how language patterns are represented and combined.
 
+### Weights and parameters: what they mean
+
+- A **parameter** is any learned numeric value inside the model.
+- A **weight** is a type of parameter, usually the numbers inside the model's matrices and vectors that control how information is transformed.
+- The model has many parameters because it contains many learned matrices and arrays, such as embedding tables, attention projections, feed-forward layers, and biases.
+- Parameters are not a count of word-to-word connections. They are the learned coefficients that the model uses to compute relationships, attention, and predictions.
+- A better way to think about it:
+  - The model takes token embeddings as input.
+  - It passes them through layers that use parameters to compute attention, transformations, and next-token probabilities.
+  - Those parameters are what the model learns during training so that the output is likely to match the correct text.
+
+Here is a simple text graph showing how the pieces fit together:
+
+```text
+[text] --> [tokenizer] --> [token IDs]
+                |
+                v
+           [embedding lookup]
+                |
+                v
+        [token embeddings vectors]
+                |
+                v
+       [transformer layers / attention]
+                |
+         uses learned parameters
+        /       |         \
+       v        v          v
+ [W_Q,W_K,W_V] [W_1,W_2] [biases]
+                |
+                v
+      [context-aware vectors]
+                |
+                v
+     [output logits / probabilities]
+                |
+                v
+           [generated tokens]
+```
+
+A concrete example from a short paragraph with more word relations:
+
+Original text:
+
+```text
+Polar bears hunt seals on the ice.
+Seals eat small fishes under the ice.
+Small fishes swim in schools to avoid predators.
+```
+
+Tokenized text for each sentence:
+
+```text
+["Polar", " bears", " hunt", " seals", " on", " the", " ice", "."]
+["Seals", " eat", " small", " fishes", " under", " the", " ice", "."]
+["Small", " fishes", " swim", " in", " schools", " to", " avoid", " predators", "."]
+```
+
+Each token is converted into a vector embedding. The model then computes attention relationships between those vectors both inside each sentence and across the paragraph.
+
+This example has stronger word relations:
+
+- `Polar bears` is a subject phrase.
+- `hunt` connects that subject to the object `seals`.
+- `seals` becomes the subject of the next sentence, where it `eat`s `small fishes`.
+- `small fishes` is shared between sentence two and three, and it is connected to `swim` and `schools` in the third sentence.
+- Context words like `ice`, `cold water`, and `predators` help the model understand the environment and meaning of the actions.
+
+A simplified relation graph for the paragraph looks like this:
+
+```text
+[Polar bears] --hunt--> [seals] --eat--> [small fishes] --swim--> [schools]
+       |                            |                   |
+       v                            v                   v
+      [ice]                     [cold water]       [predators]
+```
+
+A more token-level view of the same idea:
+
+```text
+[Polar] --> [bears] --> [hunt] --> [seals] --> [on] --> [the] --> [ice] --> [.] 
+                                     |
+                                     v
+                                  [eat] --> [small] --> [fishes] --> [near] --> [the] --> [cold] --> [water] --> [.] 
+                                                         |
+                                                         v
+                                                      [swim] --> [in] --> [schools] --> [to] --> [avoid] --> [predators] --> [.] 
+```
+
+- The model learns that `Polar` and `bears` belong together in the phrase `Polar bears`.
+- It also learns that `seals` is both the object of `hunt` and the subject of `eat`.
+- `small fishes` is reused, so the model keeps a contextual chain from sentence two into sentence three.
+- The graph is only an illustration. In practice, the model uses parameters to compute attention scores and context-aware vectors, not a stored symbolic graph.
+
+In attention, some parameters help compute how much one token should consider another token, but the total parameter count is the number of learned values in the model. Parameters define the strength and behavior of the model's computations across all tokens and layers.
+
 - Tokens
   - Text is first broken into smaller pieces called tokens. A token can be a whole word, part of a word, punctuation, or even a single character, depending on the tokenizer.
   - The model does not see raw characters or words directly; it sees token IDs. Each token is mapped to an integer ID from a fixed vocabulary.
