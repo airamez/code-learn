@@ -5,6 +5,21 @@
 - AI (Artificial Intelligence) is the field of building systems that can perform tasks typically requiring human intelligence, such as understanding language, recognizing patterns, making decisions, and solving problems.
 - In software engineering, AI helps automate routine work, surface insights, and speed up development across planning, coding, testing, and operations.
 
+## Abstraction in AI
+
+- Just as in software engineering (end everything else), the AI world is built on layers of abstraction.
+- You do not need to understand every low-level detail to be productive and take advantage of it.
+- You can write a SQL query and get results from a database without knowing
+  - How B-trees
+  - Query planners
+  - Disk I/O schedulers
+  - Replication consensus algorithms work.
+- The database exposes a clean interface and a Language (SQL), and the complexity is hidden.
+- You can build powerful applications by understanding the core concepts (embeddings, prompting, retrieval, tool use) and leveraging existing frameworks and APIs.
+  - You do not need to hand-train transformer architectures from scratch, optimize CUDA kernels, or design novel attention mechanisms.
+
+>**Note:** This is expected and normal. Mastery comes from knowing what each layer does, when to trust it, and how to compose the right tools for your problem — not from rebuilding everything from first principles every time.
+
 ## Why AI matters for software teams
 
 - Accelerates development by generating code snippets, tests, and documentation
@@ -713,13 +728,3 @@ A minimal server in Python looks like this:
   https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview
 
 > **Note:** In short, MCP turns a static LLM into an agent that can interact with the world through a universal plug-in system.
-
-## Abstraction in AI
-
-- Just as in software engineering, the AI world is built on layers of abstraction.
-- You do not need to understand every low-level detail to be productive.
-- You can write a SQL query and get results from a database without knowing how B-trees, query planners, disk I/O schedulers, or replication consensus algorithms work.
-  - The database exposes a clean interface, and the complexity is hidden.
-- You can build powerful applications by understanding the core concepts (embeddings, prompting, retrieval, tool use) and leveraging existing frameworks and APIs.
-  - You do not need to hand-train transformer architectures from scratch, optimize CUDA kernels, or design novel attention mechanisms.
->**Note:** This is expected and normal. Mastery comes from knowing what each layer does, when to trust it, and how to compose the right tools for your problem — not from rebuilding everything from first principles every time.
