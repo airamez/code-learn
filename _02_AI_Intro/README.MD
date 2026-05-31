@@ -1,37 +1,17 @@
-# How Companies Are Using AI in Software Engineering (2026)
-
-## Key Terms
-
-### LLM — Large Language Model
-
-A Large Language Model is a type of AI trained on massive amounts of text to understand and generate human-like language.
-
-### RAG — Retrieval-Augmented Generation
-
-RAG combines a language model with an external knowledge source (like docs, codebases, or manuals). The model retrieves relevant facts and then generates answers using that context.
-
-### MCP — Model Context Protocol
-
-MCP is a framework for how AI agents can interact with external tools and structured data
+# Intro to AI for Software Engineering
 
 ## What is AI?
 
-AI (Artificial Intelligence) is the field of building systems that can perform
-tasks typically requiring human intelligence, such as understanding
-language, recognizing patterns, making decisions, and solving problems. In
-software engineering, AI helps automate routine work, surface insights, and
-speed up development across planning, coding, testing, and operations.
+- AI (Artificial Intelligence) is the field of building systems that can perform tasks typically requiring human intelligence, such as understanding language, recognizing patterns, making decisions, and solving problems.
+- In software engineering, AI helps automate routine work, surface insights, and speed up development across planning, coding, testing, and operations.
 
 ## Why AI matters for software teams
 
-- Accelerates development by generating code snippets, tests, and
-documentation
+- Accelerates development by generating code snippets, tests, and documentation
 - Improves quality with automated defect detection and security checks
 - Helps teams make decisions faster using data-driven insights
-- Enables personalization and smarter applications through predictive
-models
-- Like any other tool, framework, paradigm, etc., there is no guarantee of
-success and no magic.
+- Enables personalization and smarter applications through predictive models
+- Like any other tool, framework, paradigm, etc., there is no guarantee of success and aboce all no magic :)
 
 ## Widespread Adoption Across the Industry
 
@@ -68,12 +48,12 @@ success and no magic.
 - Rise of AI Agents: 55%+ of engineers use agents that can handle multi-step tasks (planning → coding → testing → PR submission).
 - Human focus moves to higher-value work: intent definition, quality gates, and complex problem-solving.
 - Several high-skilled engineers now report they rarely type production code manually; instead they prompt AI to generate implementations and then review those outputs very carefully before merging.
-  - References
-    - https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/
-    - https://finance.yahoo.com/news/spotify-ceo-says-top-developers-103101995.html
-    - https://medium.com/@yalovoy/the-senior-engineers-job-in-2026-is-code-review-not-code-writing-f804036c55ab
-    - https://www.techinterview.org/post/3233475092/reviewing-ai-generated-code-skills/
 - Many experts now describe senior engineers as “reviewers of AI output” rather than pure code authors, with workflows that spend more time validating generated logic than writing syntax.
+- References
+  - https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/
+  - https://finance.yahoo.com/news/spotify-ceo-says-top-developers-103101995.html
+  - https://medium.com/@yalovoy/the-senior-engineers-job-in-2026-is-code-review-not-code-writing-f804036c55ab
+  - https://www.techinterview.org/post/3233475092/reviewing-ai-generated-code-skills/
 
 ## Productivity & Business Impact
 
@@ -88,7 +68,7 @@ success and no magic.
   - Potential code quality issues if not managed well.
 ### References
 
-- Mercari: "Becoming AI‑Native at Mercari: Group Strategy and a US Case Study" (Medium) and "What 11 big tech companies actually do with AI in 2026" (Dev.to)
+- "Becoming AI‑Native at Mercari: Group Strategy and a US Case Study" (Medium) and "What 11 big tech companies actually do with AI in 2026" (Dev.to)
   - https://medium.com/mercari-engineering/becoming-ai-native-at-mercari-group-strategy-and-a-us-case-study-fda4a3ee5877
   - https://dev.to/kanywst/what-11-big-tech-companies-actually-do-with-ai-in-2026-a-layered-numbers-first-breakdown-h58
 - Stripe: "How Stripe's Minions Ship 1300 PRs a Week" (ByteByteGo)
@@ -99,9 +79,12 @@ success and no magic.
 - Meta / DevMate: LinearB analysis and Medium architecture breakdown
   - https://linearb.io/blog/meta-ai-control-plane-james-everingham-guildai
   - https://medium.com/@wasowski.jarek/meta-devmate-agent-marketplace-architecture-multi-model-ai-coding-platform-c796815d3431
+
 ## Popular Tools & Ecosystem (2026)
 
-The AI developer ecosystem in 2026 is led by a mix of large platform providers and specialist code assistants. Most-used tools combine IDE pair programming, conversational LLM copilots, knowledge retrieval, and codebase-aware agents. The top products are now embedded into developer workflows, and the largest vendors maintain the strongest enterprise adoption.
+- The AI developer ecosystem in 2026 is led by a mix of large platform providers and specialist code assistants.
+- Most-used tools combine IDE pair programming, conversational LLM copilots, knowledge retrieval, and codebase-aware agents.
+- The top products are now embedded into developer workflows, and the largest vendors maintain the strongest enterprise adoption.
 
 | Tool | Owner | Primary Use | Approx. 2026 Market Share |
 |---|---|---|---|
@@ -122,7 +105,7 @@ The AI developer ecosystem in 2026 is led by a mix of large platform providers a
 - Specialized tools like Cursor, Sourcegraph Cody, Tabnine, and Replit Ghostwriter are important for codebase search, knowledge retrieval, and niche workflow automation.
 - The largest five platforms account for roughly 70-75% of the overall developer AI tool market, with the rest split among niche assistants and enterprise-specific deployments.
 
-Enterprise adoption in 90%+ of Fortune 100 companies continues, especially for tools that add compliance, security, and source-aware code reasoning.
+>Note: Enterprise adoption in 90%+ of Fortune 100 companies continues, especially for tools that add compliance, security, and source-aware code reasoning.
 
 ## Strategic Recommendations for Companies
 
@@ -138,141 +121,206 @@ Enterprise adoption in 90%+ of Fortune 100 companies continues, especially for t
 - High-regulation industries such as finance, accounting, healthcare, and aerospace are particularly vulnerable. In these domains, AI-generated code can create compliance gaps, unsafe behavior, or legal liability if it reaches production without strong human oversight.
 - Legacy and complex distributed systems are also high risk, because AI tools often lack full visibility into system-wide dependencies, data contracts, and operational constraints.
 - Other common failure modes include insecure code patterns, leaked proprietary data in prompts or responses, and brittle logic that passes unit tests but fails in real-world production conditions.
-- Best practice: use AI as an assistant, not an autonomous deployer. Maintain clear review gates, provenance tracking, deterministic checks, and a strong human-in-the-loop approval process before releasing AI-assisted code.
+- Best practice: 
+  - Use AI as an assistant, not an autonomous deployer.
+  - Maintain clear review gates, provenance tracking, deterministic checks, and a strong human-in-the-loop approval process before releasing AI-assisted code.
 
-#### Cautionary References
+#### References
 
 - Amazon review gate example: https://x.com/godofprompt/status/2031419734537711825
 - Industry post-mortem commentary: https://timonweb.com/ai/amazons-ai-code-broke-production-dont-let-yours-be-next/
+
+## Key Terms
+
+### LLM — Large Language Model
+
+- A Large Language Model is a type of AI trained on massive amounts of text to understand and generate human-like language.
+
+### RAG — Retrieval-Augmented Generation
+
+- RAG combines a language model with an external knowledge source (like docs, codebases, or manuals).
+- The model retrieves relevant facts and then generates answers using that context.
+
+### MCP — Model Context Protocol
+
+- MCP is a framework for how AI agents can interact with external tools and structured data
+
+### Model
+
+- A model is the trained mathematical function (a set of parameters and operations) that maps input tokens to output probabilities or predictions
+- In practice this is implemented as a neural network that was learned from data.
+
+### Parameters / Weights
+
+- Parameters (also called weights) are the learned numeric values inside a model that determine its behavior.
+- Parameters encode relationships between words: during training, the model adjusts them so that semantically related words are positioned close together in the embedding space, and so that word sequences that appear together in the training data have higher predicted probabilities.
+- More parameters usually increase capacity but also require more compute and memory.
+
+### Token / Tokenizer / Token ID
+
+- A token is a unit of text used by the model (word piece, subword, or character).
+- A tokenizer converts raw text into token IDs (integers) from a fixed vocabulary that the model processes.
+
+### Inference vs Training
+
+- Training is the process of updating parameters from large datasets.
+- Inference (or serving) is using a trained model to generate outputs for new inputs without changing parameters.
+
+### Context Window / Sequence Length
+
+- The context window (or sequence length) is the maximum number of tokens the model can process at once.
+- It determines how much conversation or document history the model can consider.
+
+### Prompt
+
+- A prompt is the text (instructions, examples, or questions) given to the model at inference time to elicit a desired response.
+- Prompts can include few-shot examples to steer outputs.
+
+### Fine-tuning / Instruction Tuning
+
+- Fine-tuning updates a pretrained model on task-specific data to improve performance.
+- Instruction tuning adapts a model to better follow human-style instructions.
+
+### Few-shot / Zero-shot
+
+- Few-shot means providing a small number of examples in the prompt
+- Zero-shot means giving no examples and relying on the model's generalization from pretraining.
+
+### Latency / Throughput
+
+- Latency is the time it takes the model to produce a response for a single request.
+- Throughput is how many requests (or tokens) a system can handle per unit time—important for scaling.
 
 ## Understanding how LLM works
 
 Large Language Models are built in two major stages: pretraining a statistical model on a huge corpus of text, then using that model to generate or score new text. A model is not a conventional program with explicit rules; it is a set of learned numerical weights that define how language patterns are represented and combined.
 
-### Weights and parameters: what they mean
+### Meaning is statistical, not semantic
+
+- A LLM does not truly understand the meaning of a word in the way humans do.
+- It learns statistical relationships between tokens from the training data and uses those relationships to predict what comes next.
+- That means the model can generate fluent text about a concept like a `color`, `God`, or `love`, but it does so by estimating which words and phrases are likely to appear together, not by holding a real understanding of the thing itself.
+- The model knows patterns of usage, not inner meaning.
+- It can talk about “blue” or “red,” but it does not internally perceive or experience color.
+- It can write about “love” or “God,” but it does so by reflecting how those words are used in text, not by understanding their deeper meaning.
+
+### Weights and parameters
 
 - A **parameter** is any learned numeric value inside the model.
 - A **weight** is a type of parameter, usually the numbers inside the model's matrices and vectors that control how information is transformed.
-- The model has many parameters because it contains many learned matrices and arrays, such as embedding tables, attention projections, feed-forward layers, and biases.
+- The model has many parameters because it contains many learned matrices and arrays:
+  - **biases** — constants added to layer outputs that allow the model to shift activations independently of the input.
+  - **embedding vectors** — learned representations for tokens that convert discrete vocabulary IDs into continuous numeric vectors.
+  - **layer normalization offsets and scales** — learned values that normalize and rescale layer activations to stabilize training and improve generalization.
+  - **attention key/query/value projection values** — learned matrices used to compute attention scores and transform tokens into keys, queries, and values for the attention mechanism.
 - Parameters are not a count of word-to-word connections. They are the learned coefficients that the model uses to compute relationships, attention, and predictions.
 - A better way to think about it:
   - The model takes token embeddings as input.
   - It passes them through layers that use parameters to compute attention, transformations, and next-token probabilities.
   - Those parameters are what the model learns during training so that the output is likely to match the correct text.
 
-Here is a simple text graph showing how the pieces fit together:
+#### Representation
 
 ```text
-[text] --> [tokenizer] --> [token IDs]
-                |
-                v
-           [embedding lookup]
-                |
-                v
-        [token embeddings vectors]
-                |
-                v
-       [transformer layers / attention]
-                |
-         uses learned parameters
-        /       |         \
-       v        v          v
- [W_Q,W_K,W_V] [W_1,W_2] [biases]
-                |
-                v
-      [context-aware vectors]
-                |
-                v
-     [output logits / probabilities]
-                |
-                v
-           [generated tokens]
+1 [text] --> 2 [tokenizer] --> 3 [token IDs]
+                    |
+                    v
+               4 [embedding lookup]
+                    |
+                    v
+            5 [token embedding vectors]
+                    |
+                    v
+           6 [transformer layers / attention]
+                    |
+             uses learned parameters
+            /       |         \
+           v        v          v
+     7 [W_Q,W_K,W_V] [W_1,W_2] [biases]
+                    |
+                    v
+          8 [context-aware vectors]
+                    |
+                    v
+         9 [output logits / probabilities]
+                    |
+                    v
+             10 [generated tokens]
 ```
 
-A concrete example from a short paragraph with more word relations:
+- 1 [text] — the raw human-readable input sentence or document.
+- 2 [tokenizer] — converts raw text into discrete tokens based on a vocabulary.
+- 3 [token IDs] — integer indexes for each token that the model can process.
+- 4 [embedding lookup] — maps each token ID to a learned dense vector.
+- 5 [token embedding vectors] — continuous numeric representations of the tokens.
+- 6 [transformer layers / attention] — transformer blocks that compute relationships between tokens and transform embeddings.
+- 7 [W_Q,W_K,W_V], [W_1,W_2], [biases] — learned parameters used inside attention and feed-forward layers.
+- 8 [context-aware vectors] — token representations enriched by attention to other tokens in the input.
+- 9 [output logits / probabilities] — scores for every token in the vocabulary, representing how likely each next token is.
+- 10 [generated tokens] — the final text chosen by sampling or picking the highest-probability tokens.
 
-Original text:
-
-```text
-Polar bears hunt seals on the ice.
-Seals eat small fishes under the ice.
-Small fishes swim in schools to avoid predators.
-```
-
-Tokenized text for each sentence:
-
-```text
-["Polar", " bears", " hunt", " seals", " on", " the", " ice", "."]
-["Seals", " eat", " small", " fishes", " under", " the", " ice", "."]
-["Small", " fishes", " swim", " in", " schools", " to", " avoid", " predators", "."]
-```
-
-Each token is converted into a vector embedding. The model then computes attention relationships between those vectors both inside each sentence and across the paragraph.
-
-This example has stronger word relations:
-
-- `Polar bears` is a subject phrase.
-- `hunt` connects that subject to the object `seals`.
-- `seals` becomes the subject of the next sentence, where it `eat`s `small fishes`.
-- `small fishes` is shared between sentence two and three, and it is connected to `swim` and `schools` in the third sentence.
-- Context words like `ice`, `cold water`, and `predators` help the model understand the environment and meaning of the actions.
-
-A simplified relation graph for the paragraph looks like this:
-
-```text
-[Polar bears] --hunt--> [seals] --eat--> [small fishes] --swim--> [schools]
-       |                            |                   |
-       v                            v                   v
-      [ice]                     [cold water]       [predators]
-```
-
-A more token-level view of the same idea:
-
-```text
-[Polar] --> [bears] --> [hunt] --> [seals] --> [on] --> [the] --> [ice] --> [.] 
-                                     |
-                                     v
-                                  [eat] --> [small] --> [fishes] --> [near] --> [the] --> [cold] --> [water] --> [.] 
-                                                         |
-                                                         v
-                                                      [swim] --> [in] --> [schools] --> [to] --> [avoid] --> [predators] --> [.] 
-```
-
+#### A concrete example from a short paragraph with more words
+- Original text:
+  ```text
+  Polar bears hunt seals on the ice.
+  Seals eat small fishes under the ice.
+  Small fishes swim in schools to avoid predators.
+  ```
+- Tokenized text for each sentence:
+  ```text
+  ["Polar", " bears", " hunt", " seals", " on", " the", " ice", "."]
+  ["Seals", " eat", " small", " fishes", " under", " the", " ice", "."]
+  ["Small", " fishes", " swim", " in", " schools", " to", " avoid", " predators", "."]
+  ```
+- Each token is converted into a vector embedding.
+- The model then computes attention relationships between those vectors both inside each sentence and across the paragraph.
+- This example has stronger word relations:
+  - `Polar bears` is a subject phrase.
+  - `hunt` connects that subject to the object `seals`.
+  - `seals` becomes the subject of the next sentence, where it `eat`s `small fishes`.
+  - `small fishes` is shared between sentence two and three, and it is connected to `swim` and `schools` in the third sentence.
+  - Context words like `ice`, `cold water`, and `predators` help the model understand the environment and meaning of the actions.
+- A simplified relation graph for the paragraph looks like this:
+  ```text
+  [Polar bears] --hunt--> [seals] --eat--> [small fishes] --swim--> [schools]
+        |                            |                   |
+        v                            v                   v
+        [ice]                     [cold water]       [predators]
+  ```
+- A more token-level view of the same idea:
+  ```text
+  [Polar] --> [bears] --> [hunt] --> [seals] --> [on] --> [the] --> [ice] --> [.] 
+                                      |
+                                      v
+                                    [eat] --> [small] --> [fishes] --> [near] --> [the] --> [cold] --> [water] --> [.] 
+                                                          |
+                                                          v
+                                                        [swim] --> [in] --> [schools] --> [to] --> [avoid] --> [predators] --> [.] 
+  ```
 - The model learns that `Polar` and `bears` belong together in the phrase `Polar bears`.
 - It also learns that `seals` is both the object of `hunt` and the subject of `eat`.
 - `small fishes` is reused, so the model keeps a contextual chain from sentence two into sentence three.
 - The graph is only an illustration. In practice, the model uses parameters to compute attention scores and context-aware vectors, not a stored symbolic graph.
-
-In attention, some parameters help compute how much one token should consider another token, but the total parameter count is the number of learned values in the model. Parameters define the strength and behavior of the model's computations across all tokens and layers.
-
+- Some parameters help compute how much one token should consider another token, but the total parameter count is the number of learned values in the model.
+- Parameters define the strength and behavior of the model's computations across all tokens and layers.
 - Tokens
-  - Text is first broken into smaller pieces called tokens. A token can be a whole word, part of a word, punctuation, or even a single character, depending on the tokenizer.
-  - The model does not see raw characters or words directly; it sees token IDs. Each token is mapped to an integer ID from a fixed vocabulary.
-
-  Example:
-
-  ```text
-  The sky is blue
-  ```
-
-  might become:
-
-  ```text
-  ["The", " sky", " is", " blue"]
-  [1024, 17, 4056, 213]
-  ```
-
-  - The ID sequence is the encoded input the model actually processes.
-
-  Simple training example:
-
-  Suppose we want a model to answer questions about colors using a tiny dataset.
-
-  Training data:
-  - Input: "Question: What color is the sky? Answer:"
-  - Target output: " blue"
-
-  Step-by-step:
+  - Text is first broken into smaller pieces called tokens.
+    - A token can be a whole word, part of a word, punctuation, or even a single character, depending on the tokenizer.
+  - The model does not see raw characters or words directly;
+    - Each token is mapped to an integer ID from a fixed vocabulary.
+  - Example: `The sky is blue`
+  - Might become:
+    ```text
+    ["The", " sky", " is", " blue"]
+    [1024, 17, 4056, 213]
+    ```
+    - The ID sequence is the encoded input the model actually processes.
+  - Simple training example:
+    - Suppose we want a model to answer questions about colors using a tiny dataset.
+    - Training data:
+      - Input: "Question: What color is the sky? Answer:"
+      - Target output: " blue"
+  - Step-by-step:
   1. Tokenize the input and target.
      - Input tokens: ["Question:", " What", " color", " is", " the", " sky", "?", " Answer:"]
      - Target tokens: [" blue"]
@@ -286,8 +334,7 @@ In attention, some parameters help compute how much one token should consider an
   5. The model predicts the next token probability distribution.
      - Output logits might assign high probability to " blue" and low probability to unrelated tokens.
   6. During training, the model compares its prediction to the true target " blue" and updates parameters to make that prediction more likely.
-
-  In other words, the model learns from examples like this:
+- In other words, the model learns from examples like this:
 
   ```text
   Input:  Question: What color is the sky? Answer:
@@ -346,7 +393,7 @@ In attention, some parameters help compute how much one token should consider an
 
   >Warning: Is the sky always blue?
 
-  Longer text is tokenized sequentially. For example:
+  Longer text is tokenized sequentially.
 
   ```text
   An integer is a whole number that can be positive, negative, or zero.
@@ -378,7 +425,7 @@ In attention, some parameters help compute how much one token should consider an
 ## Matrix multiplication in AI models
 
 Matrix multiplication is one of the most important operations in modern AI models.
->TODO: https://www.youtube.com/watch?v=CDjZfmrPef4
+>Great video: https://www.youtube.com/watch?v=CDjZfmrPef4
 
 - Embedding lookup is effectively a form of matrix multiplication.
   - A token ID selects one row from the embedding matrix. That row is a dense vector, and the whole embedding table is a matrix of shape `[vocab_size × embedding_dim]`.
@@ -408,17 +455,33 @@ Matrix multiplication is one of the most important operations in modern AI model
   - The model processes these vectors through many layers of computation, often transformer layers with attention mechanisms. Attention lets the model weigh different input tokens relative to one another, so it can decide which parts of the prompt are most relevant.
   - The final output is a sequence of token probabilities. The model selects likely next tokens one by one, producing text that answers the question or continues the prompt.
 
-Example:
-- Source text: "Explain how to use a loop in Python."
-- Tokenized as: ["Explain", " how", " to", " use", " a", " loop", " in", " Python", "."]
-- The model converts tokens into vectors, applies learned weights and attention, and generates a response like "In Python, use a for loop with range() to iterate over values...".
+## Neural Network
 
-This is why LLMs are useful for software engineering: they can map patterns in natural language to patterns in code, documentation, and design concepts, but they do so through statistical association rather than formal symbolic reasoning.
+- An LLM is a specific application of a neural network.
+- Most modern LLMs are built as transformer neural networks, which are a type of deep neural network architecture.
+- The neural network is the underlying model: layers, neurons, weights, biases, activations.
+- The LLM is the trained version of that network on massive text data, so it can predict and generate language.
+- Neural network = the general mathematical model and architecture.
+- LLM = a neural network trained specifically to process and generate language.
 
->TODO: Add a diagram about the The embedding table is a matrix of shape and add a reference to that nice video explaning it.
+>Amazing video: https://www.youtube.com/watch?v=aircAruvnKk&list=WL&index=3
 
-
-
+### Interesting Facts
+- Modern LLMs are based on older ideas, but the breakthrough came from massive scaling, transformer architecture, and new training methods
+- Multiple analyses note that emergent capabilities—reasoning, coding, translation—appeared unexpectedly once models crossed certain size/data thresholds.
+- Massive scaling was the key breakthrough.
+  - Papers surveying LLM evolution emphasize that the jump from earlier models to GPT‑3–4–5–style systems came from:
+    - training on hundreds of billions to trillions of tokens,
+    - using hundreds of billions of parameters,
+    - and applying huge compute budgets.
+  - These surveys explicitly highlight that brute‑force scaling was the dominant driver of early LLM progress. 
+- Researchers genuinely did not expect scaling alone to work as well as it did.
+- Scaling is hitting limits.  
+  - Recent research identifies “scaling walls”:
+    - data scarcity,
+    - exponential cost growth,
+    - energy constraints.
+    - This means future progress will require more than just “make it bigger.”
 
 
 
