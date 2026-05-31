@@ -425,31 +425,26 @@ Large Language Models are built in two major stages: pretraining a statistical m
 ## Matrix multiplication in AI models
 
 Matrix multiplication is one of the most important operations in modern AI models.
->Great video: https://www.youtube.com/watch?v=CDjZfmrPef4
+>Video: https://www.youtube.com/watch?v=CDjZfmrPef4
 
 - Embedding lookup is effectively a form of matrix multiplication.
   - A token ID selects one row from the embedding matrix. That row is a dense vector, and the whole embedding table is a matrix of shape `[vocab_size × embedding_dim]`.
   - In a hardware implementation, this lookup can be done by multiplying a one-hot token vector by the embedding matrix.
-
 - Most transformer computations are matrix multiplications.
   - A transformer layer computes queries, keys, and values using weight matrices: `Q = X·W_Q`, `K = X·W_K`, `V = X·W_V`.
   - Attention scores are computed with another matrix multiply: `scores = Q·K^T`.
   - The attended output is then `softmax(scores)·V`, which is also matrix multiplication.
   - The feed-forward network inside the transformer is typically `FFN(X) = gelu(X·W_1 + b_1)·W_2 + b_2`.
-
 - Why matrix multiplication matters
   - Matrix multiplication is a dense, regular operation that hardware like GPUs and TPUs can execute very efficiently.
   - Because transformer models process many tokens and many dimensions, most of the runtime and energy cost comes from these large matrix multiplies.
   - This is why AI accelerators are designed around fast matrix math and why software frameworks like PyTorch and TensorFlow expose it as a first-class primitive.
-
 - In practice
   - The model does not compute one token at a time in isolation. It processes whole batches of token embeddings and applies these matrix operations across the full sequence.
   - This is what gives transformers their power: they can mix information from many tokens with a few large matrix multiplies rather than many small, irregular operations.
-
 - Training and fine-tuning
   - During pretraining, the model learns to predict missing or next tokens from a large volume of text. That training objective is what gives it a statistical sense of grammar, facts, and common word sequences.
   - Fine-tuning or instruction tuning is usually applied afterward to specialize the base model for tasks like question answering, coding help, or following developer prompts.
-
 - From source text to answers
   - When you ask a question, the input text is tokenized and converted into a sequence of token IDs. These IDs are mapped into vectors by an embedding layer.
   - The model processes these vectors through many layers of computation, often transformer layers with attention mechanisms. Attention lets the model weigh different input tokens relative to one another, so it can decide which parts of the prompt are most relevant.
@@ -463,10 +458,15 @@ Matrix multiplication is one of the most important operations in modern AI model
 - The LLM is the trained version of that network on massive text data, so it can predict and generate language.
 - Neural network = the general mathematical model and architecture.
 - LLM = a neural network trained specifically to process and generate language.
+- Amazing video: https://www.youtube.com/watch?v=aircAruvnKk&list=WL&index=3
+  - Some images from the video:
+    - ![](./images/image0.png)
+    - ![](./images/image1.png)
+    - ![](./images/image2.png)
+    - ![](./images/image3.png)
+    - ![](./images/image4.png)
 
->Amazing video: https://www.youtube.com/watch?v=aircAruvnKk&list=WL&index=3
-
-### Interesting Facts
+## Interesting Facts about LLMs and AI
 - Modern LLMs are based on older ideas, but the breakthrough came from massive scaling, transformer architecture, and new training methods
 - Multiple analyses note that emergent capabilities—reasoning, coding, translation—appeared unexpectedly once models crossed certain size/data thresholds.
 - Massive scaling was the key breakthrough.
