@@ -18,7 +18,7 @@
 - You can build powerful applications by understanding the core concepts (embeddings, prompting, retrieval, tool use) and leveraging existing frameworks and APIs.
   - You do not need to hand-train transformer architectures from scratch, optimize CUDA kernels, or design novel attention mechanisms.
 
->**Note:** This is expected and normal. Mastery comes from knowing what each layer does, when to trust it, and how to compose the right tools for your problem — not from rebuilding everything from first principles every time.
+>**Note:** This is expected and normal. Mastery comes from knowing what each layer does, when to trust it, and how to compose the right tools for a problem — not from rebuilding everything from first principles every time.
 
 ## Why AI matters for software teams
 
@@ -215,14 +215,14 @@ Large Language Models are built in two major stages: pretraining a statistical m
 
 #### What does "1 billion parameters" mean?
 
-- When you see a model described as "100M," "1B," "7B," or "175B," that number is the **total count of learned numeric values** inside the model.
+- When a model is described as "100M," "1B," "7B," or "175B," that number is the **total count of learned numeric values** inside the model.
 - It is not the number of words it knows, the number of rules it follows, or the size of its training data.
 - A **100M parameter model** has roughly 100 million individual numbers (weights and biases) that were adjusted during training.
 - A **1B parameter model** has roughly 1 billion such numbers.
 - A **175B parameter model** (like the original GPT-3) has 175 billion learned values.
 - Each parameter is a single floating-point number stored in the model's matrices.
 - More parameters generally mean the model has more capacity to learn complex patterns, but it also requires more memory, more compute to run, and more data to train effectively.
-- The parameter count is essentially a measure of the model's **size and capacity**, similar to how the number of neurons in a brain is a measure of its complexity — though it does not directly tell you how smart or capable the model is.
+- The parameter count is essentially a measure of the model's **size and capacity**, similar to how the number of neurons in a brain is a measure of its complexity — though it does not directly indicate how smart or capable the model is.
 
 #### Common Models and Their Sizes
 
@@ -473,7 +473,7 @@ Matrix multiplication is one of the most important operations in modern AI model
   - During pretraining, the model learns to predict missing or next tokens from a large volume of text. That training objective is what gives it a statistical sense of grammar, facts, and common word sequences.
   - Fine-tuning or instruction tuning is usually applied afterward to specialize the base model for tasks like question answering, coding help, or following developer prompts.
 - From source text to answers
-  - When you ask a question, the input text is tokenized and converted into a sequence of token IDs. These IDs are mapped into vectors by an embedding layer.
+  - When a question is asked, the input text is tokenized and converted into a sequence of token IDs. These IDs are mapped into vectors by an embedding layer.
   - The model processes these vectors through many layers of computation, often transformer layers with attention mechanisms. Attention lets the model weigh different input tokens relative to one another, so it can decide which parts of the prompt are most relevant.
   - The final output is a sequence of token probabilities. The model selects likely next tokens one by one, producing text that answers the question or continues the prompt.
 
@@ -485,13 +485,16 @@ Matrix multiplication is one of the most important operations in modern AI model
 - The LLM is the trained version of that network on massive text data, so it can predict and generate language.
 - Neural network = the general mathematical model and architecture.
 - LLM = a neural network trained specifically to process and generate language.
-- Amazing video: https://www.youtube.com/watch?v=aircAruvnKk&list=WL&index=3
-  - Some images from the video:
+- Sugested Videos:
+  - [Neural Networks Explained: Step-by-Step Walkthrough](https://www.youtube.com/watch?v=N9QY_fKXtFc)
+  - [But what is a neural network? | Deep learning chapter 1](https://www.youtube.com/watch?v=aircAruvnKk)
+  - Some images from the videos:
     - ![](./images/image0.png)
     - ![](./images/image1.png)
     - ![](./images/image2.png)
     - ![](./images/image3.png)
     - ![](./images/image4.png)
+    - ![](./images/image5.png)
 
 ### Interesting Facts about LLMs and AI
 - Modern LLMs are based on older ideas, but the breakthrough came from massive scaling, transformer architecture, and new training methods
@@ -510,19 +513,20 @@ Matrix multiplication is one of the most important operations in modern AI model
     - energy constraints.
     - This means future progress will require more than just “make it bigger.”
 
-> **Setting up a LLM in you PC using Llama**: https://youtu.be/c79iaUa5pQ8
+> **Setting up a LLM on a PC using Llama**: https://youtu.be/c79iaUa5pQ8
 
 ## RAG - Retrieval-Augmented Generation
 
-RAG is a technique that gives an LLM access to external knowledge it was never trained on.
+- RAG is a technique that gives an LLM access to external knowledge it was never trained on.
 
 ### The Problem
 - LLMs have a **knowledge cutoff** — they do not know what happened after training.
 - They **hallucinate** when asked about facts outside their training data.
-- They have **no access** to private or proprietary data (your company's internal docs, your email, your personal files).
+- They have **no access** to private or proprietary data (a company's internal docs, email, personal files).
 
 ### How RAG Works
-Instead of asking the LLM directly, RAG fetches relevant documents first, then feeds them into the prompt:
+
+- Instead of asking the LLM directly, RAG fetches relevant documents first, then feeds them into the prompt:
 
 1. **Embed** — Convert documents into numerical vectors (embeddings) and store them in a vector database.
 2. **Retrieve** — When a user asks a question, find the most similar vectors (relevant chunks of text).
@@ -541,26 +545,28 @@ User Query → Search Vector DB → Get Top Chunks → Build Prompt → LLM Resp
 
 ### What Is a Vector Database?
 
-A vector database is a specialized database designed to store and search **high-dimensional vectors** (also called embeddings) rather than rows and columns.
+- A vector database is a specialized database designed to store and search **high-dimensional vectors** (also called embeddings) rather than rows and columns.
 
 **In RAG, the vector database is the retrieval engine that powers Step 2.** All document chunks are converted into vectors and stored there; when a user asks a question, the system turns the question into a vector too, queries the database for the closest matches, and returns the corresponding text chunks to the LLM. Without it, there would be no fast way to find semantically relevant documents among thousands or millions of chunks.
 
-In a traditional database you query by exact match or filtering:
-```
-SELECT * FROM docs WHERE topic = 'finance'
-```
+- In a traditional database one queries by exact match or filtering:
 
-In a vector database you query by **semantic similarity** — "find me the vectors closest to this one":
-```
-query_vector = embed("What are the current interest rates?")
-nearest_neighbors = vector_db.search(query_vector, top_k=3)
-```
+  ```
+  SELECT * FROM docs WHERE topic = 'finance'
+  ```
 
-This is possible because an embedding model turns text into a list of numbers (a vector) where similar meanings end up close together in a mathematical space.
+- In a vector database one queries by **semantic similarity** — "find me the vectors closest to this one":
+
+  ```
+  query_vector = embed("What are the current interest rates?")
+  nearest_neighbors = vector_db.search(query_vector, top_k=3)
+  ```
+
+- This is possible because an embedding model turns text into a list of numbers (a vector) where similar meanings end up close together in a mathematical space.
 
 #### Visual Example
 
-Here is a simplified 2D representation of how documents become vectors and how a query finds the closest ones:
+- Here is a simplified 2D representation of how documents become vectors and how a query finds the closest ones:
 
 ```
 Raw Text Documents                      Vector Space (simplified 2D)
@@ -581,27 +587,33 @@ Vector DB Search: Find nearest neighbors to [0.80, 0.20]
   3. "Top 10 vacation spots"  [0.10, 0.90]  ← far away (ignored)
 ```
 
-The database does not "understand" the words; it simply measures geometric distance between vectors. Vectors that are numerically close represent texts with similar meaning.
+- The database does not "understand" the words; it simply measures geometric distance between vectors.
+- Vectors that are numerically close represent texts with similar meaning.
 
 Popular vector databases and libraries include **Pinecone**, **Weaviate**, **Chroma**, **Milvus**, **Qdrant**, **FAISS** (Facebook's library), and **pgvector** (a PostgreSQL extension).
 
 ### Simple Example
-Imagine a customer support chatbot for a bank.
-- Without RAG: The LLM might invent fake interest rates or outdated policies.
-- With RAG: The system retrieves the latest policy PDF, and the LLM answers accurately based on that document.
 
-Another example: a legal assistant that searches thousands of case files and cites specific precedents when answering a lawyer's question.
+- Imagine a customer support chatbot for a bank.
+  - Without RAG: The LLM might invent fake interest rates or outdated policies.
+  - With RAG: The system retrieves the latest policy PDF, and the LLM answers accurately based on that document.
+- Another example: 
+  - A legal assistant that searches thousands of case files and cites specific precedents when answering a lawyer's question.
 
 ### How Big Companies Use RAG
-- **Microsoft (Copilot / Bing)** — Retrieves live web results and enterprise documents before generating answers, grounding responses in real data rather than static training knowledge.
-- **Salesforce (Einstein GPT)** — Pulls from a company's CRM records to draft personalized emails and sales recommendations.
-- **Spotify** — Uses retrieval over podcast transcripts and metadata to power search and recommendation features.
-- **Uber** — Retrieves internal documentation and incident reports to help engineers troubleshoot systems faster.
-- **Airbnb** — RAG over help articles and policies to provide hosts and guests with precise, up-to-date answers.
+- **Microsoft (Copilot / Bing)**
+  - Retrieves live web results and enterprise documents before generating answers, grounding responses in real data rather than static training knowledge.
+- **Salesforce (Einstein GPT)**
+  - Pulls from a company's CRM records to draft personalized emails and sales recommendations.
+- **Spotify**
+  - Uses retrieval over podcast transcripts and metadata to power search and recommendation features.
+- **Uber**
+  - Retrieves internal documentation and incident reports to help engineers troubleshoot systems faster.
+- **Airbnb**
+  - RAG over help articles and policies to provide hosts and guests with precise, up-to-date answers.
 
-### How to Build a Simple RAG System
+### Typical Stack to build a RAG
 
-If you want to try RAG yourself, here is the typical stack:
 
 | Component | What It Does | Common Choices |
 |---|---|---|
@@ -612,15 +624,14 @@ If you want to try RAG yourself, here is the typical stack:
 | **LLM** | Generates the final answer | GPT-4, Claude, Llama, Mistral |
 | **Orchestrator** | Ties everything together | LangChain, LlamaIndex, or plain Python |
 
-A minimal flow in Python looks like this:
+- A minimal flow in Python looks like this:
+  1. Load a PDF and split it into chunks.
+  2. Embed each chunk and store the vectors in a vector DB.
+  3. When a user asks a question, embed the question and query the DB for the top 3–5 most similar chunks.
+  4. Pass those chunks + the user's question to an LLM prompt.
+  5. Return the LLM's answer.
 
-1. Load a PDF and split it into chunks.
-2. Embed each chunk and store the vectors in a vector DB.
-3. When a user asks a question, embed the question and query the DB for the top 3–5 most similar chunks.
-4. Pass those chunks + the user's question to an LLM prompt.
-5. Return the LLM's answer.
-
-You do not need to build from scratch — frameworks like **LangChain** and **LlamaIndex** provide ready-made RAG pipelines.
+>Note: You do not need to build from scratch — frameworks like **LangChain** and **LlamaIndex** provide ready-made RAG pipelines.
 
 ### Tutorials and Examples
 - **LangChain RAG Tutorial** — Step-by-step guide using OpenAI embeddings and Chroma:  
@@ -642,8 +653,8 @@ You do not need to build from scratch — frameworks like **LangChain** and **Ll
 - **Official page:** https://modelcontextprotocol.io/
 
 ### The Problem
-- LLMs live in a **sandbox** — they cannot directly read your files, query your database, or call your APIs.
-- Every integration requires **custom code**: one connector for Slack, another for GitHub, another for your internal CRM.
+- LLMs live in a **sandbox** — they cannot directly read files, query a database, or call APIs.
+- Every integration requires **custom code**: one connector for Slack, another for GitHub, another for an internal CRM.
 - There is **no standard** — each tool vendor builds its own plugin format, and developers must rewrite adapters for every LLM platform.
 
 ### How MCP Works
@@ -682,10 +693,10 @@ The flow works like this:
   - It is transport-agnostic: it can work over local stdio, HTTP, or WebSockets.
 
 ### Simple Example
-Imagine you ask an AI assistant inside your IDE: "Show me the git commits from yesterday that touched the payment module."
 
-- **Without MCP:** The IDE developer would have to build a custom Git integration for that specific LLM, hardcoding shell commands and parsing output.
-- **With MCP:** The IDE starts an MCP server that exposes `git_log`, `git_show`, and `git_diff`. The LLM sees these tools, calls `git_log` with the right arguments, and formats the result for you. The same server can be reused by any MCP-compatible assistant.
+- If someone asks an AI assistant inside an IDE: "Show me the git commits from yesterday that touched the payment module."
+  - **Without MCP:** The IDE developer would have to build a custom Git integration for that specific LLM, hardcoding shell commands and parsing output.
+  - **With MCP:** The IDE starts an MCP server that exposes `git_log`, `git_show`, and `git_diff`. The LLM sees these tools, calls `git_log` with the right arguments, and formats the result for the user. The same server can be reused by any MCP-compatible assistant.
 
 Another example: a company builds an MCP server over its internal employee directory. Any LLM (Claude, GPT-4, a local model) can look up colleagues, org charts, or project assignments without custom code per model.
 
@@ -698,7 +709,7 @@ Another example: a company builds an MCP server over its internal employee direc
 
 ### How to Build a Simple MCP Server
 
-If you want to try MCP yourself, here is the typical flow:
+- If you want to try MCP yourself, here is the typical flow:
 
 | Component | What It Does | Common Choices |
 |---|---|---|
@@ -710,10 +721,10 @@ If you want to try MCP yourself, here is the typical flow:
 
 A minimal server in Python looks like this:
 
-1. Define your tools (e.g., `list_files`, `read_file`).
+1. Define the tools (e.g., `list_files`, `read_file`).
 2. Use the MCP SDK to expose them over stdio or HTTP.
-3. Configure an MCP client (e.g., Claude Desktop) to point at your server.
-4. The LLM discovers your tools automatically and can call them in natural conversation.
+3. Configure an MCP client (e.g., Claude Desktop) to point at the server.
+4. The LLM discovers the tools automatically and can call them in natural conversation.
 
 ### Tutorials and Examples
 - **Official MCP Documentation** — Introduction, quickstart, and SDK reference:  
