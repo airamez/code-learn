@@ -17,4 +17,7 @@
 //BasicOperationsPractices.Question07.Run();
 //BasicOperationsPractices.Question08.Run();
 //BasicOperationsPractices.Question09.Run();
-BasicOperationsPractices.Question10.Run();
+//BasicOperationsPractices.Question10.Run();
+//BasicOperationsPractices.Question11.Run();
+//BasicOperationsPractices.Question12.Run();
+BasicOperationsPractices.Question13.Run();
