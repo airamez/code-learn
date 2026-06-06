@@ -20,4 +20,5 @@
 //BasicOperationsPractices.Question10.Run();
 //BasicOperationsPractices.Question11.Run();
 //BasicOperationsPractices.Question12.Run();
-BasicOperationsPractices.Question13.Run();
+//BasicOperationsPractices.Question13.Run();
+BasicOperationsPractices.Question14.Run();
