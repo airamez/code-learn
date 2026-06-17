@@ -1,7 +1,7 @@
 using System;
 namespace SelectionPractices;
 
-public class Question5
+public class Question05
 {
     public static void Run()
     {
