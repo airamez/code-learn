@@ -28,4 +28,9 @@
 //SelectionPractices.Question02.Run();
 //SelectionPractices.Question03.Run();
 //SelectionPractices.Question04.Run();
-SelectionPractices.Question05.Run();
+//SelectionPractices.Question05.Run();
+//SelectionPractices.Question06.Run();
+//SelectionPractices.Question07.Run();
+//SelectionPractices.Question08.Run();
+//SelectionPractices.Question09.Run();
+SelectionPractices.Question10.Run();

@@ -46,6 +46,7 @@ public class Question05
             n1 = n2;
             n2 = aux;
         }
+        
         if (n3 <= n1)
         {
             Console.WriteLine($"{n3} {n1} {n2}");
