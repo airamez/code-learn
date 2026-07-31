@@ -71,5 +71,7 @@
 |24|[Selection commands Practices (Question5 6 to 10)](https://youtube.com/live/dGoyTfANhiw) | [./_01_Intro/_015_Practices.txt](./_01_Intro/_015_Practices.txt) <br>[./_01_Intro/_02_Practices/Question06.cs](./_01_Intro/_02_Practices/Question06.cs) <br>[./_01_Intro/_02_Practices/Question07.cs](./_01_Intro/_02_Practices/Question07.cs) <br>[./_01_Intro/_02_Practices/Question08.cs](./_01_Intro/_02_Practices/Question08.cs) <br>[./_01_Intro/_02_Practices/Question09.cs](./_01_Intro/_02_Practices/Question09.cs) <br>[./_01_Intro/_02_Practices/Question10.cs](./_01_Intro/_02_Practices/Question10.cs) <br> |
 |25|[Selection command (switch and Question 11)](https://youtube.com/live/mNnLF03tfyI) | [./_01_Intro/_015_Practices.txt](./_01_Intro/_015_Practices.txt) <br>[./_01_Intro/_02_Practices/Question11.cs](./_01_Intro/_02_Practices/Question11.cs) |
 |26|[Selection command (switch and Question 12)](https://youtube.com/live/dLJp8K6U8Wo) | [./_01_Intro/_015_Practices.txt](./_01_Intro/_015_Practices.txt) <br>[./_01_Intro/_02_Practices/Question12.cs](./_01_Intro/_02_Practices/Question12.cs) |
+|27|[Selection command (switch and Question 13)](https://youtube.com/live/ma6tfucp2RI) | [./_01_Intro/_015_Practices.txt](./_01_Intro/_015_Practices.txt) <br>[./_01_Intro/_02_Practices/Question13.cs](./_01_Intro/_02_Practices/Question13.cs) |
+
 
 
